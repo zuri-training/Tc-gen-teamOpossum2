@@ -2,7 +2,7 @@
 
 This repo belongs to Team Opossum2 and we are working on a terms and conditions generator website. A platform that allows users to generate T&C and privacy policy for their platforms.
 
-### Live Link (Not avialable yet)
+### Live Link (Not available yet)
 
 ## Getting Started
 
@@ -45,13 +45,14 @@ In the project directory, you can run:
 2. View and Interact with the documentation
 3. Register to view more details
 4. No access to use until registered
-   Authenticated Users
 
-5. Full access to the platform
-6. Allow users enter basic information
-7. Generate selected files with the right data and information
-8. Allow export, download, share and website embed
-9. Allow user save data and come back to download
+###   Authenticated Users
+
+1. Full access to the platform
+2. Allow users enter basic information
+3. Generate selected files with the right data and information
+4. Allow export, download, share and website embed
+5. Allow user save data and come back to download
 
 Design: FIGMA
 Client: HTML, CSS and Javascript
