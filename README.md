@@ -54,9 +54,19 @@ In the project directory, you can run:
 4. Allow export, download, share and website embed
 5. Allow user save data and come back to download
 
-Design: FIGMA
+## Tech Stack
+
+* **Design:** <p align="">Figma <a href="https://www.figma.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="figma" width="15" height="15"/></a> </p>
+
+ * **Client:** <p align=""><a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="25" height="25"/></a>HTML5 <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="25" height="25"/></a>CSS3 <a href="https://www.javascript.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="20" height="20"/></a>JAVASCRIPT</p>  
+
+<br>
+
+* **Server:** <p><a href="https://www.nodejs.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="100" height="80"/></a></p>
+
+<!-- Design: FIGMA
 Client: HTML, CSS and Javascript
-Server: NodeJs
+Server: NodeJs -->
 
 ## 🤝 Contributing
 
