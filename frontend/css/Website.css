@@ -8,7 +8,6 @@
 }
 body{
     padding-left: 250px;
-    position: relative;
 }
 /* ASIDE */
 aside{
@@ -36,6 +35,9 @@ aside h1{
 aside h4{
     color: #f2f2f2;
     margin-bottom: 3px;
+}
+aside a{
+    color: #f2f2f2;
 }
 .btn1{
     background-color: #660077;
@@ -79,9 +81,6 @@ aside ol{
     color: #f2f2f2;
     margin-top: 30px;
 }
-aside a{
-    color: #f2f2f2;
-}
 aside li{
     margin-bottom: 30px;
 }
@@ -109,41 +108,54 @@ aside li:hover{
 input{
     accent-color: #660077;
 }
-label{
-    margin-left: 5px;
-}
 .bcg1 section{
-    display: flex;
     width: 90%;
     margin: auto;
     margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
     border-top: 1px solid #B280BB;
     border-bottom: 1px solid #B280BB;
     padding: 20px 5px;
 }
-.mainChoice{
-    flex-basis: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.label1{
+    color: gray;
+    font-size: 15px;
+}
+.label2{
+    font-weight: bold;
 }
 .h1{
-    margin-bottom: 20px;
+    font-size:22px;
+    margin-bottom: 25px;
 }
-.p1{
+.h2{
+    font-size: 17px;
     margin-bottom: 10px;
 }
-.mainText{
-    flex-basis: 30%;
+.web{
+    width: 400px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-.p2{
-    line-height: 20px;
-    font-size: 13px;
+.country{
+    width: 400px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 10px;
 }
+
 /* BTN! */
+.back h2{
+    margin-top: 50px;
+    float: left;
+    margin-left: 50px;
+    color: #660077;
+}
 .btn2{
     margin-top: 50px;
     float: right;
@@ -168,7 +180,7 @@ footer{
     margin: auto;
     display: flex;
     justify-content: space-around;
-    margin-top: 190px;
+    margin-top: 250px;
     border-top: 1px solid #B280BB;
     padding: 20px 0px;
     font-size: 15px;
@@ -189,12 +201,18 @@ footer{
         flex-direction: column;
         gap: 80px;
     }
+    .T1{
+        font-size: 25px;
+    }
     .open{
         display: block;
         margin-left: 20px;
     }
-    .T1{
-        font-size: 25px;
+    .web{
+        width: 250px;
+    }
+    .country{
+        width: 250px;
     }
     .p2{
         font-size: 15px;
