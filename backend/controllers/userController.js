@@ -64,14 +64,19 @@ const signup = async (req, res) => {
         // Response
         res.status(200).json({ user })
     } catch (err) {
-        res.json({ error: error.message })
+        res.json({ error: err.message })
     }
 }
 // @desc Get all registered users
 // @method GET
 // @path /allUsers
 const allUsers = async (req, res) => {
-    res.status(200).json({ user })
+    try {
+        const users = await User.find().sort({ createdAt: -1 })
+        res.status(200).json({ users })
+    } catch (err) {
+        res.status(400).json({ error: err.message })
+    }
 }
 
 
