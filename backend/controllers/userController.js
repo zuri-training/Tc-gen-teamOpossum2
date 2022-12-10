@@ -1,5 +1,10 @@
 const bcrypt = require('bcrypt')
 const User = require('../model/User')
+const jwt = require('jsonwebtoken')
+
+const createToken = (_id) => {
+    return jwt.sign({ _id }, process.env.SECRET, { expiresIn: '3d' })
+}
 
 // @desc Login Route
 // @method POST
@@ -24,8 +29,12 @@ const login = async (req, res) => {
         if (!match) {
             throw Error("Incorrect Password")
         }
+
+        // create token
+        const token = createToken(user._id)
+
         // Response
-        res.status(200).json({ user })
+        res.status(200).json({ user, token })
     } catch (err) {
         res.status(400).json({ error: err.message })
     }
@@ -61,8 +70,11 @@ const signup = async (req, res) => {
             password: hashedPassword
         })
 
+        // create token
+        const token = createToken(user._id)
+
         // Response
-        res.status(200).json({ user })
+        res.status(200).json({ user, token })
     } catch (err) {
         res.json({ error: err.message })
     }
