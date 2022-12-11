@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); 
+
+
+
+                    /* CSS RESET STARTS */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* li {
+    list-style: none;
+} */
+
+/* Set root elemet font size */
+html {
+  font-size: 62.5%;
+  background-color: var(--bg-black1e-color);
+}
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+:root {
+    /* colors */
+  --bg-black-clr: #000;
+  --bg-black1e-clr: #1e1e1e;
+  --bg-black1200-clr: #040404;
+  --bg-gray-clr: #D5D5D5;
+  --bg-lpink-clr: #FFF6F6;
+  --bg-lpurple-clr: #E0CCE4;
+  --bg-drkpurple-clr: #660077;
+  --bg-cream-clr: #FEE0B4;
+  --bg-lblue-clr: #D5F5E7;;
+  --bg-lgreen-clr: #CEEDFF;
+  --bg-blu-clr: #0948b3;
+  --bg-lred-clr:  #ee5050;
+  --bg-white-clr: #fff;
+  --clr-drkgray: #374554;
+  --clr-brown: #A86D14;
+
+  /* measurements */
+  --bdr-rads: 8px;
+  --btnbdr-rads: 20px;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  text-rendering: optimizeSpeed;
+  font-family: 'Poppins', 'Nunito Sans', sans-serif;
+  background-color: var(--bg-lpink-clr);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+ 
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+                    /* CSS RESET ENDS */
+
+
+
+main {
+    width: 100%;
+    margin: 115px auto;
+    
+    color: var(--bg-black-clr);
+    padding-top: 70px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.flex {
+    display: flex;
+}
+
+.legal-policy-section {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 0 20px;
+    width: 92%;
+    /* height: 508px; */
+    column-gap: 80px;
+    /* position: relative; */
+}
+
+.legal-policy-text h2 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 72px;
+    margin-bottom: 30px;
+}
+
+.legal-policy-text p {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: justify;
+    width: 635px;
+    margin-bottom: 70px;
+}
+
+.legal-policy-text a {
+    background-color: var(--bg-drkpurple-clr);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 8px;
+    padding: 16px 40px;
+    color: var(--bg-white-clr);
+}
+
+.fa-arrow-right {
+    margin-left: 12px;
+}
+
+.sign-contract-img {
+    width: 520px;
+}
+
+.card-section {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 0 20px;
+    width: 92%;
+    /* height: 508px; */
+    row-gap: 40px;
+    column-gap: 16px;
+    /* position: relative; */
+}
+
+.card {
+    background-color: var(--bg-white-clr);
+    /* width: 630px; */
+    border-radius: var(--bdr-rads);
+    padding: 32px 40px;
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.card h5 {
+    margin-top: 10px;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+
+.fa-greater-than {
+    color: var(--clr-brown);
+    width: 11.63px;
+    height: 20px;
+}
+
+.card-1 {
+    background-color: var(--bg-gray-clr);
+}
+
+
+.t_c_gen-uses {
+    background-color: var(--bg-lpurple-clr);
+    padding: 40px 80px;
+    margin-bottom: 60px;
+    font-size: 1.6rem;
+    line-height: 24px;
+    font-weight: 400;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.uses {
+    column-gap: 165px;
+}
+
+.uses h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.uses.pp h3 {
+    width: 617px;
+}
+
+.uses p {
+    margin-bottom: 18px;
+    width: 598px;
+}
+
+.uses-img.img-1 {
+    position: relative;
+    top: 40px;
+    height: 330px;
+    width: 462.43px;
+}
+
+.uses ol {
+    margin-left: 25px;
+}
+
+.uses.tc p {
+    width: 603px;
+}
+
+.uses-img.img-2 {
+    position: relative;
+    left: 70px;
+    height: 387px;
+    width: 380px;
+
+}
+
+.benefits {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;   
+    margin-bottom: 60px; 
+}
+
+.t_c_gen-benefits {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 9px;
+    padding: 0 60px;
+}
+
+.benefit {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.benefit-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.benefit-img-1 {
+    background-color: var(--bg-cream-clr);
+}
+
+.benefit-img-2 {
+    background-color: var(--bg-lpurple-clr);
+}
+
+.benefit-img-3 {
+    background-color: var(--bg-lgreen-clr);
+}
+
+.benefit-img-4 {
+    background-color: var(--bg-lblue-clr);
+}
+
+.benefit-text h5 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 9px;
+}
+
+.benefit-text p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+@media (max-width: 900px) {
+
+
+
+}
+
+
+
+@media (max-width: 500px) {
+
+
+
+}
+
