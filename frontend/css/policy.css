@@ -1,0 +1,92 @@
+body{
+    overflow-x: hidden;
+}
+.purple{
+    background-color: #660077;
+}
+.text-purple{
+    color:#660077;
+}
+.purple-nav{
+    background-color: #E0CCE4;
+}
+.logo{
+    width:45px;
+    height: 45px;
+}
+.side_nav{
+    min-width:250px;
+    max-width:250px;
+    transition: all 0.2s ease;
+}
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+.sidebar li.active{
+    background-color: #E0CCE4;
+    cursor: pointer;
+
+}
+.sidebar li.active a, .sidebar li.active a:hover{
+    font-weight: bold;
+    background-color: #E0CCE4;
+
+}
+.sidebar li.active a{
+    cursor: pointer;
+}
+.size{
+    width: 90%;
+}
+.down{
+    margin-top: 4rem;
+}
+
+
+@media screen and (max-width: 800px){
+.progressBarContainer{
+	width: 90%;
+	margin-left: 5%;
+}
+.side_nav{
+    margin-left: -300px;
+    position:fixed;
+    min-height: 100vh;
+    z-index: 1;
+}
+.side_nav.active{
+    margin-left: 0;
+}
+
+
+}
+
+
+.progressBarContainer{
+	height: 10px;
+	background-color: #CCC ;
+	position: relative;
+	border-radius: 7px;
+	width: 85%;
+	margin-left: 7.5%;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+.progressBar{
+	position: absolute;
+	height: 100%;
+	
+	background-color: rgb(6, 240, 76);
+	border-radius: 7px;
+
+	animation: progress-animation 5s forwards;
+}
+@keyframes progress-animation{
+	0% {
+		width:  0%;
+	}
+	100%{
+		width: 4%;
+	}
+}
