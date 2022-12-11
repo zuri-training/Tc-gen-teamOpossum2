@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T&C Website</title>
-    <link rel="stylesheet" href="./css/T&C.css">
+    <link rel="stylesheet" href="./css/Final-Details.css">
     <script src="https://kit.fontawesome.com/bbd705426d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -41,38 +41,32 @@
         <article class="bcg1">
             <section>
                 <div class="mainChoice">
-                    <div>
-                        <h4 class="h1">Users Location</h4>
-                        <p class="p1">Do you have users in the EU, UK, Iceland, Liechtenstein or Norway?</p>
+                    <div class="div1">
+                        <h4 class="h1">Additional information</h4>
+                        <h5>Do you want to add your own clause to these legal terms?</h5>
                         <input type="radio" name="choice">
-                        <label for="Yes">Yes</label><br>
+                        <label for="Yes" class="label">Yes</label><br>
                         <input type="radio" name="choice">
-                        <label for="No">No</label>
+                        <label for="No" class="label">No</label><br>
                     </div>
-                    <div>
-                        <p class="p1">Do you have users in the United State?</p>
-                        <input type="radio" name="choice">
-                        <label for="Yes">Yes</label><br>
-                        <input type="radio" name="choice">
-                        <label for="No">No</label>
+                    <div class="div2">
+                        <h4>Governing Law</h4>
+                        <h5>Do you want to add your own clause to these legal terms?</h5>
+                        <label for="country" class="label2">The Country's lwas that will be used to interpret the content in your legal terms</label><br>
+                        <select name="country" class="country">
+                        <option selected disabled>Please select</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Ghana">Ghana</option>
+                        </select>
                     </div>
-                </div>
-
-                <div class="mainText">
-                    <img src="./Image/mdi_lightbulb-on-outline.png" alt=""><br>
-                    <h4 class="h1">What is a privacy policy?</h4>
-                    <p class="p2">A privacy policy (also referred to as a privacy notice) is a statement or legal document that describes how a company, 
-                        website, or app collects, uses, maintains, and shares information 
-                        collected from or about its users. 
-                        Most countries require any website that collects personal 
-                        information from its users to have a written privacy policy posted on the website.
-                    </p>
                 </div>
             </section>
         </article>
     </main>
     
-    <a href="./Website.html"><div class="btn2"><button>Next</button></div></a>
+    <a href="./Dispute.html"><div class="back"><h2>BACK</h2></div></a>
+    <a href="./T&C.html"><div class="btn2"><button>Next</button></div></a>
 
     <footer>
         <p>Privacy Policy</p>
