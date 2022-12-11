@@ -1,0 +1,171 @@
+/* ----- HEADER CSS STARTS ---- */
+
+header li {
+  list-style: none;
+}
+
+header a {
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 24px;
+  width: 100%;
+}
+
+.main-head {
+  background-color: #E0CCE4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 112px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+}
+
+.head-logo li {
+  width: 45px;
+  height: 45px;
+}
+
+.head1 {
+  display: flex;
+  align-items: center;
+  padding: 16px 48px;
+  margin-left: 40px;
+  gap: 56px;
+  width: 578px;
+  color: #000;
+}
+
+.head1 li:nth-of-type(1) a, .main-foot li:nth-of-type(1) a {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  gap: 12px;
+}
+
+.head2, .main-foot2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px 48px;
+  gap: 48px;
+}
+
+.head3, .log a  {
+  width: 54px;
+  height: 27px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.head4 a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 174px;
+  height: 48px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.head4 a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 41px;
+  gap: 10px;
+  width: 174px;
+  height: 48px;
+  background: #660077;
+}
+
+/* ----- HEADER CSS ENDS ---- */
+
+/* ----- FOOTER CSS STARTS ---- */
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 24px;
+  width: 100%;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 16px 24px;
+  width: 100%;
+  height: 131px;
+  background-color: #040404;
+}
+
+.main-logo1 {
+  width: 45px;
+  height: 45px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 24px;
+}
+
+.main-foot {
+  display: flex;
+  align-items: center;
+  padding: 16px 48px;
+  gap: 24px;
+}
+
+.main-foot a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-foot2 {
+  gap: 80px;
+  padding: 16px 0;
+}
+
+.log a {
+  color: #ffffff;
+}
+
+.get a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 12px 41px;
+  background: #660077;
+  border-radius: 8px;
+}
+
+
+/* ----- FOOTER CSS ENDS ---- */
