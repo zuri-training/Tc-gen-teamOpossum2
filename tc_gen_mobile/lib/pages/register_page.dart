@@ -23,8 +23,7 @@ class _RegisterPageState extends State<RegisterPage> {
   GlobalKey<FormState> globalKey = GlobalKey<FormState>();
   String? email;
   String? password;
-  String? fullname;
-  String? nationality;
+  String? username;
 
   @override
   Widget build(BuildContext context) {
@@ -90,8 +89,8 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
             FormHelper.inputFieldWidget(
               context,
-              "Full Name",
-              "Full Name",
+              "Username",
+              "Username",
               (onValidateVal) {
                 if (onValidateVal.isEmpty) {
                   return "First name can\'t be empty.";
@@ -99,7 +98,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 return null;
               },
               (onSavedVal) {
-                fullname = onSavedVal;
+                username = onSavedVal;
               },
               borderFocusColor: Color.fromRGBO(102, 0, 119, 0.5),
               prefixIconColor: Color.fromRGBO(102, 0, 119, 0.7),
@@ -139,35 +138,6 @@ class _RegisterPageState extends State<RegisterPage> {
                   onPressed: () {},
                   color: Color.fromRGBO(102, 0, 119, 0.7),
                   icon: Icon(Icons.email),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: FormHelper.inputFieldWidget(
-                context,
-                "Nationality",
-                "Nationality",
-                (onValidateVal) {
-                  if (onValidateVal.isEmpty) {
-                    return "Nationality  can\'t be empty.";
-                  }
-                  return null;
-                },
-                (onSavedVal) {
-                  nationality = onSavedVal;
-                },
-                borderFocusColor: Color.fromRGBO(102, 0, 119, 0.5),
-                prefixIconColor: Color.fromRGBO(102, 0, 119, 0.7),
-                borderColor: Color.fromRGBO(223, 223, 223, 1),
-                textColor: Color.fromRGBO(58, 59, 59, 1),
-                hintColor: Color.fromRGBO(102, 0, 119, 0.7),
-                borderRadius: 10,
-                obscureText: hidePassword,
-                suffixIcon: IconButton(
-                  onPressed: () {},
-                  color: Color.fromRGBO(102, 0, 119, 0.7),
-                  icon: Icon(Icons.location_city),
                 ),
               ),
             ),
