@@ -45,3 +45,15 @@ h4{
     padding: 10px;
     border-radius: 5px;
 }
+
+@media (max-width:1000px) {
+    .registration-form{
+        max-width: 100%;
+    }
+
+    .registration-form button{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    
+}

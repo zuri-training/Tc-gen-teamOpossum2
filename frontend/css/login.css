@@ -22,7 +22,7 @@ img{
     background-color: #9955A4;
     grid-area: b;
     padding: 70px;
-    margin-right: 100px;
+    margin-right: 50px;
     margin-top: 100px;
     border-radius: 5px;
     text-align: center;
@@ -58,4 +58,15 @@ button{
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
+}
+
+@media (max-width:1000px) {
+    .details{
+        max-width: 100%;
+    }
+
+    .frame{
+        display: none;
+    }
+    
 }
