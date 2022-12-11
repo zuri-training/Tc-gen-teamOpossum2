@@ -4,9 +4,11 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 body{
     padding-left: 250px;
+    position: relative;
 }
 /* ASIDE */
 aside{
@@ -77,8 +79,14 @@ aside ol{
     color: #f2f2f2;
     margin-top: 30px;
 }
+aside a{
+    color: #f2f2f2;
+}
 aside li{
     margin-bottom: 30px;
+}
+aside li:hover{
+    color: #B280BB;
 }
 .aside_footer{
     position: absolute;
@@ -170,8 +178,9 @@ footer{
     body{
         padding-left: 0px;
     }
-    .aside{
+    aside{
         left: -300px;
+        z-index: 2;
     }
     .close{
         display: block;
@@ -183,6 +192,9 @@ footer{
     .open{
         display: block;
         margin-left: 20px;
+    }
+    .T1{
+        font-size: 25px;
     }
     .p2{
         font-size: 15px;
