@@ -83,3 +83,20 @@ h2 {
 	padding-top: 50px;
 	padding: 50px;
 }
+
+@media (max-width:1000px) {
+    .intro{
+        max-width: 100%;
+        align-content: center;
+    }
+
+	.middle{
+        max-width: 100%;
+        align-content: center;
+    }
+
+    .image{
+        display: none;
+    }
+    
+}
