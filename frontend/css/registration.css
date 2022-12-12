@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+
+}
+
+h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.registration-form{
+    background-color:#9955A4;
+    top: 5%;
+    left: 10%;
+    right: 10%;
+    bottom: 5%;
+}
+
+.registration-form p{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", "sans-serif";
+    color: #FFFFFF;
+}
+
+.registration-form input{
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    width: 300px;
+}
+
+.registration-form button{
+    font-size: 16px;
+    background-color: #9955A4;
+    color: #FFFFFF;
+    width: 388px;
+    height: 35px;
+    margin: 0px 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width:1000px) {
+    .registration-form{
+        max-width: 100%;
+    }
+
+    .registration-form button{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    
+}
