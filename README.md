@@ -68,6 +68,15 @@ In the project directory, you can run:
 Client: HTML, CSS and Javascript
 Server: NodeJs -->
 
+## Milestone 1 google doc link
+https://docs.google.com/document/d/1woYyB0dhR3XJjiJVac1lbl218uH7fp_yjnpzwgvUNAo/edit?usp=sharing
+
+## Milestone 2 google doc link
+https://docs.google.com/document/d/1W_pPoRSXX0tm-aQfJNPNIsAeG1n2YWVE_doobbXFmY4/edit?usp=sharing
+
+## Milestone 3 google doc link
+https://docs.google.com/document/d/1o-zvZVnHIpvZ31BwP9zofIPT9KSEMPRQ8XqV-iZa9_8/edit?usp=sharing
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
