@@ -9,6 +9,8 @@ body{
 }
 .purple-nav{
     background-color: #E0CCE4;
+    position: fixed;
+    width: 100%;
 }
 .logo{
     width:45px;
@@ -17,7 +19,13 @@ body{
 .side_nav{
     min-width:250px;
     max-width:250px;
+    position: fixed;
+    margin-top: 70px;
+    z-index: -2;
     transition: all 0.2s ease;
+}
+.side_margin{
+    margin-left: 20%;
 }
 .content{
     min-height: 100vh;
@@ -89,4 +97,15 @@ body{
 	100%{
 		width: 4%;
 	}
+}
+
+#hidden_website, #hidden_app, #hidden_facebook{
+    display: none;
+}
+.next{
+    max-width:fit-content;
+    margin-left: 87%;
+}
+.special_margin{
+    margin-top: 25%;
 }
