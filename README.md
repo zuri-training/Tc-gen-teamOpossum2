@@ -82,7 +82,7 @@ https://docs.google.com/document/d/1o-zvZVnHIpvZ31BwP9zofIPT9KSEMPRQ8XqV-iZa9_8/
 Akanbi Timileyin - https://github.com/Timileyine
 Bilkisu Garba - figma.com/@bilkisugarba
 Chidinma Mbah - figma.com/@dinmambah
-Emmanuel Chira - figma.com/@emmanuelchira
+Emmanuel Chira - [figma.com/@emmanuelchira](figma.com/@emmanuelchira)
 Oluwadamilola Adegboye - 
 Precious Nnadi - figma.com/@precycharles
 Toluwabori Olagoke - 
