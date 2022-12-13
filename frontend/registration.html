@@ -15,8 +15,40 @@
     />
 
     <link rel="stylesheet" href="css/registration.css" />
+    <link rel="stylesheet" href="css/head-foot.css">
   </head>
   <body>
+    <header>
+      <nav class="main-head">
+        <ul class="head-logo">
+          <li>
+            <a href="#"
+              ><img src="Image/landing-pg-imgs/Main Logo.png" alt="logo"
+            /></a>
+          </li>
+        </ul>
+
+        <ul class="head1">
+          <li>
+            <a href="policy.html"
+              ><span>Generate</span
+              ><span class="dropdown"
+                ><img
+                  src="Image/landing-pg-imgs/expand_more.png"
+                  alt="" /></span
+            ></a>
+          </li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+
+        <ul class="head2">
+          <li class="head3"><a href="login.html">Log in</a></li>
+          <li class="head4"><a href="registration.html">Get Started</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="registration-form">
       <h4>Create an account</h4>
 
@@ -40,10 +72,50 @@
         <input type="password" name="password" id="password" required />
 
         <p>Confirm Password</p>
-        <input type="password" name="password" id="confirmpassword" required />
+        <input type="password" name="password" id="confirm-password" required />
 
         <button type="submit">Sign Up</button>
       </form>
     </div>
+
+    <footer>
+      <nav class="foot">
+          <ul>
+              <li class="main-logo1">
+                      <a href="#"><img src="Image/landing-pg-imgs/Main Logo 1.png" alt="logo" /></a>
+              </li>
+          </ul>
+
+          <ul>
+              <li class="socials"> 
+                  <a href="#"><img src="Image/landing-pg-imgs/Twitter.png" alt="logo" /></a>
+                  <a href="#"><img src="Image/landing-pg-imgs/Instagram.png" alt="logo" /></a>
+                  <a href="#"><img src="Image/landing-pg-imgs/Facebook.png" alt="logo" /></a>
+              </li>
+          </ul>
+
+          <ul class="main-foot">
+              <li>
+                  <a href="policy.html"><span>Generate</span><img src="Image/landing-pg-imgs/expand_more.png" alt="" /></a>
+              </li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+          </ul>
+
+          <ul class="main-foot2">
+              <li class="log"><a href="login.html">Log in</a></li>
+              <li class="get"><a href="registration.html"">Get Started</a></li>
+          </ul>
+      </nav>
+    </footer>
+    <script>
+      const first_name = document.getElementById("firstname");
+      const last_name = document.getElementById("lastname");
+      const nationality = document.getElementById("nationality");
+      const phonenumber = document.getElementById("phonenumber");
+      const email = document.getElementById("email");
+      const password = document.getElementById("password");
+      const confirm_password = document.getElementById("confirm-password");
+    </script>
   </body>
 </html>
