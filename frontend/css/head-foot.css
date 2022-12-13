@@ -1,4 +1,19 @@
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
 /* ----- HEADER CSS STARTS ---- */
+
+/* header {
+  position: relative;
+} */
 
 header li {
   list-style: none;
@@ -6,6 +21,7 @@ header li {
 
 header a {
   color: #000000;
+  text-decoration: none;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 24px;
@@ -17,6 +33,7 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 48px;
   padding: 16px 24px;
   position: fixed;
   z-index: 1;
@@ -27,6 +44,17 @@ header a {
   font-weight: 500;
   line-height: 24px;
   color: #000;
+  white-space: nowrap;
+}
+
+.main-head li a, .foot li a {
+  transition: all 200ms ease-in-out;
+}
+
+.main-head li a:hover, 
+.foot li a:hover, 
+.foot p:hover {
+  opacity: 0.69;
 }
 
 .head-logo li {
@@ -34,33 +62,83 @@ header a {
   height: 45px;
 }
 
-.head1 {
+.head1, .head1-tooltip {
   display: flex;
   align-items: center;
   padding: 16px 48px;
-  margin-left: 40px;
   gap: 56px;
   width: 578px;
   color: #000;
 }
 
-.head1 li:nth-of-type(1) a, .main-foot li:nth-of-type(1) a {
+.head1 li:nth-of-type(1) a, .generate a,
+.main-foot li:nth-of-type(1) a {
   display: flex;
   justify-content: stretch;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
-.head2, .main-foot2 {
+.head1 li:nth-of-type(1) {
+  position: relative;
+}
+
+.generate-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 67px;
+  background-color: #FFF6F6;
+  width: 300px;
+  box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+  white-space: initial;
+  gap: 30px;
+  z-index: -1;
+  padding: 15px 25px;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.generate-policy, .generate-tandc {
+  float: left;
+  margin: 0;
+  padding: 0;
+  color: #370341;
+  text-align: left;
+}
+
+.generate-items p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.generate-items h5 {
+  line-height: 13px;
+}
+
+.head1-generate:hover .generate-items {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/* .head1 li:nth-of-type(1) a:hover .dropdown {
+  color: white;
+  transform: rotate(360deg);
+} */
+
+.head2, .head2-tooltip {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding: 16px 48px;
   gap: 48px;
+  width: 438px;
 }
 
-.head3, .log a  {
+.head3 a, .log a  {
   width: 54px;
   height: 27px;
   font-style: normal;
@@ -93,6 +171,23 @@ header a {
   background: #660077;
 }
 
+.head4 a:hover, .get a:hover {
+  opacity: 0.9;
+  position: relative;
+  bottom: 1px;
+  left: 1px;
+}
+
+.menu-bar {
+  opacity: 0;
+  position: absolute;
+  right: -1000px;
+  font-size: 28px;
+}
+
+
+
+
 /* ----- HEADER CSS ENDS ---- */
 
 /* ----- FOOTER CSS STARTS ---- */
@@ -103,6 +198,7 @@ footer li {
 
 footer a {
   color: white;
+  text-decoration: none;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 24px;
@@ -115,10 +211,11 @@ footer a {
   justify-content: center;
   align-items: center;
   gap: 80px;
-  padding: 16px 24px;
+  padding: 32px 24px;
   width: 100%;
-  height: 131px;
+  /* height: 131px; */
   background-color: #040404;
+  white-space: nowrap;
 }
 
 .main-logo1 {
@@ -149,7 +246,6 @@ footer a {
 }
 
 .main-foot2 {
-  gap: 80px;
   padding: 16px 0;
 }
 
@@ -167,5 +263,90 @@ footer a {
   border-radius: 8px;
 }
 
-
 /* ----- FOOTER CSS ENDS ---- */
+
+@media (max-width: 1100px) {
+
+  .menu-bar {
+    opacity: 1;
+    right: 80px;
+    top: 40px;
+  }
+
+  .head2 {
+    display: none;
+  }
+
+  .tooltip {
+    position: absolute;
+    top: -240px;
+    right: -70px;
+    flex-direction: column;
+    gap: 20px;
+    width: 280px;
+    background-color: #E0CCE4;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;   
+    padding-bottom: 10px;
+    z-index: -1;
+  }
+
+  .head2-tooltip {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .head3 {
+    margin-right: 4px;
+  }
+
+ .menu-bar:hover .tooltip {
+    opacity: 1;
+    visibility: visible;   
+  }
+
+  .head1-tooltip {
+    flex-direction: column;
+    visibility: hidden; 
+  }
+
+.foot {
+  flex-direction: column;
+  gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .head1 {
+    visibility: hidden;
+  }
+
+  .tooltip {
+    top: 65px;
+    width: 300px;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .head1-tooltip {
+    visibility: visible;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .generate:hover .generate-items {
+    visibility: visible;
+    position: relative;
+    width: 290px;
+    top: 15px;
+    left: 0.3px;
+  }
+
+}
