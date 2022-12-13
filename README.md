@@ -77,6 +77,9 @@ https://docs.google.com/document/d/1W_pPoRSXX0tm-aQfJNPNIsAeG1n2YWVE_doobbXFmY4/
 ## Milestone 3 google doc link
 https://docs.google.com/document/d/1o-zvZVnHIpvZ31BwP9zofIPT9KSEMPRQ8XqV-iZa9_8/edit?usp=sharing
 
+## Mood Boards
+https://www.figma.com/file/ErdLJQ7akTRHHBkIEZI3Om/TCG-Mood-board?node-id=2%3A192&t=uha1lMckjann790V-1
+
 
 ## Team Members
 Akanbi Timileyin - https://github.com/Timileyine
@@ -85,7 +88,7 @@ Chidinma Mbah - [figma.com/@dinmambah](figma.com/@dinmambah)
 Emmanuel Chira - [figma.com/@emmanuelchira](figma.com/@emmanuelchira)
 Oluwadamilola Adegboye - 
 Precious Nnadi - [figma.com/@precycharles](figma.com/@precycharles)
-Toluwabori Olagoke - 
+Toluwabori Olagoke - [figma.com/@Toluwabori](figma.com/@Toluwabori)
 Nnabuike Okafor - [figma.com/@Nnabuz](figma.com/@Nnabuz)
 Ikenna Chinelo - [figma.com/@Enna](figma.com/@Enna)
 Dunmoye Ayobami - https://github.com/Ayobami-2019
