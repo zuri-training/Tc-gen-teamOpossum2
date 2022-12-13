@@ -84,10 +84,10 @@ Bilkisu Garba - figma.com/@bilkisugarba
 Chidinma Mbah - figma.com/@dinmambah
 Emmanuel Chira - figma.com/@emmanuelchira
 Oluwadamilola Adegboye - 
-Precious Nnadi - 
+Precious Nnadi - figma.com/@precycharles
 Toluwabori Olagoke - 
-Nnabuike Okafor - 
-Ikenna Chinelo - 
+Nnabuike Okafor - figma.com/@Nnabuz
+Ikenna Chinelo - figma.com/@Enna
 Dunmoye Ayobami - https://github.com/Ayobami-2019
 Wonderful Adeyemo - https://github.com/Dev-wonderful
 Kanu chibundu - https://github.com/Ginohmk
