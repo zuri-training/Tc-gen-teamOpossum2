@@ -80,14 +80,14 @@ https://docs.google.com/document/d/1o-zvZVnHIpvZ31BwP9zofIPT9KSEMPRQ8XqV-iZa9_8/
 
 ## Team Members
 Akanbi Timileyin - https://github.com/Timileyine
-Bilkisu Garba - figma.com/@bilkisugarba
-Chidinma Mbah - figma.com/@dinmambah
+Bilkisu Garba - [figma.com/@bilkisugarba](figma.com/@bilkisugarba)
+Chidinma Mbah - [figma.com/@dinmambah](figma.com/@dinmambah)
 Emmanuel Chira - [figma.com/@emmanuelchira](figma.com/@emmanuelchira)
 Oluwadamilola Adegboye - 
-Precious Nnadi - figma.com/@precycharles
+Precious Nnadi - [figma.com/@precycharles](figma.com/@precycharles)
 Toluwabori Olagoke - 
-Nnabuike Okafor - figma.com/@Nnabuz
-Ikenna Chinelo - figma.com/@Enna
+Nnabuike Okafor - [figma.com/@Nnabuz](figma.com/@Nnabuz)
+Ikenna Chinelo - [figma.com/@Enna](figma.com/@Enna)
 Dunmoye Ayobami - https://github.com/Ayobami-2019
 Wonderful Adeyemo - https://github.com/Dev-wonderful
 Kanu chibundu - https://github.com/Ginohmk
