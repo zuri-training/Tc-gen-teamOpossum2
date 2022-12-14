@@ -51,8 +51,8 @@ async function tcFileModification (req, res, next) {
         res.download(generatedFile)
         next()
     }catch(err){
-        console.error(err)
-        //await fsPromises.appendFile(path.join(__dirname, 'files', 'error-log', 'tc-log.txt'), err )
+        //console.error(err)
+        await fsPromises.appendFile(path.join(__dirname, 'files', 'error-log', 'tc-log.txt'), err )
     }
 }
 
@@ -80,8 +80,8 @@ async function ppFileModification (req, res, next) {
         res.download(generatedFile)
         next()
     }catch(err){
-        console.error(err)
-        //await fsPromises.appendFile(path.join(__dirname, 'files', 'error-log', 'pp-log.txt'), err )
+        //console.error(err)
+        await fsPromises.appendFile(path.join(__dirname, 'files', 'error-log', 'pp-log.txt'), err )
     }
 }
 
