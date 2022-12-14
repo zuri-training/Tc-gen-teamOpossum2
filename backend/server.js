@@ -13,7 +13,7 @@ const projectRoot = path.join(__dirname, '..')
 const frontend = path.join(projectRoot, 'frontend')
 
 // connect to database
-//connectDB()
+connectDB()
 
 // middlewares
 app.use(express.json())
