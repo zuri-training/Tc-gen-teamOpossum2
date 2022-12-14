@@ -37,3 +37,52 @@ $('#facebook').click(function() {
 });
 
 
+//api_call function
+let date = document.getElementById("date").value; //last update date
+let company = document.getElementById("company").value;  //company information
+let country = document.getElementById("country").value; // comapny country
+let list = "LIST";   //list of services
+let website_contact_url = website_url+"/contact"; //website contact page url
+let website_contact_email = document.getElementById("website_contact_email").value; //website contact email
+let website_url = document.getElementById("website_url").value; //website url
+let app_url = document.getElementById("app_url").value; //app url
+let facebook_url = document.getElementById("facebook_url").value; //facebook url
+if(website_url==="" && app_url !== ""){
+    website_url = app_url;
+}else if(website_url === "" && facebook_url !== ""){
+    website_url = facebook_url;
+}else{
+    website_url = "NO VALID ADDRESS GIVEN";
+}
+
+function api_call(){
+
+    var form_values = {
+        date: date,
+        company: company,
+        country: country,
+        list: list,
+        website_url: website_url,
+        website_contact_url: website_contact_url,
+        website_contact_email: website_contact_email
+
+    }
+    $.ajax({
+        url : "/generate/pp.gen",
+        type: "POST",
+        data : form_values,
+        datatype: "JSON",
+        success: function(response){
+
+            if(response==201 ||  response == 200){
+
+                //Link to download document
+                
+                window.open("download/pp.doc", "_self");            
+            }else{
+                alert('nothing good');
+            }
+        }
+
+    });
+}
