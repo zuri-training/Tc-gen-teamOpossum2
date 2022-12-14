@@ -9,7 +9,7 @@ const projectRoot = path.join(__dirname, '..')
 router.get('tc-gen', (req, res) => {
                 res.send('A form would be provided')
         })
-        .post('tc-gen/:form-details', (req, res) => {
+        .post('tc-gen/', (req, res) => {
                 res.send('The generated file')
         })
 
