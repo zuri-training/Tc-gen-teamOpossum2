@@ -68,6 +68,38 @@ In the project directory, you can run:
 Client: HTML, CSS and Javascript
 Server: NodeJs -->
 
+## Milestone 1 google doc link
+https://docs.google.com/document/d/1woYyB0dhR3XJjiJVac1lbl218uH7fp_yjnpzwgvUNAo/edit?usp=sharing
+
+## Milestone 2 google doc link
+https://docs.google.com/document/d/1W_pPoRSXX0tm-aQfJNPNIsAeG1n2YWVE_doobbXFmY4/edit?usp=sharing
+
+## Milestone 3 google doc link
+https://docs.google.com/document/d/1o-zvZVnHIpvZ31BwP9zofIPT9KSEMPRQ8XqV-iZa9_8/edit?usp=sharing
+
+## Mood Boards
+https://www.figma.com/file/ErdLJQ7akTRHHBkIEZI3Om/TCG-Mood-board?node-id=2%3A192&t=uha1lMckjann790V-1
+
+
+## Team Members
+Akanbi Timileyin - https://github.com/Timileyine <br>
+Bilkisu Garba - [figma.com/@bilkisugarba](figma.com/@bilkisugarba) <br>
+Chidinma Mbah - [figma.com/@dinmambah](figma.com/@dinmambah) <br>
+Emmanuel Chira - [figma.com/@emmanuelchira](figma.com/@emmanuelchira) <br>
+Oluwadamilola Adegboye - [figma.com/@eunicedamilola](figma.com/@eunicedamilola) <br>
+Precious Nnadi - [figma.com/@precycharles](figma.com/@precycharles) <br>
+Toluwabori Olagoke - [figma.com/@Toluwabori](figma.com/@Toluwabori) <br>
+Nnabuike Okafor - [figma.com/@Nnabuz](figma.com/@Nnabuz) <br>
+Ikenna Chinelo - [figma.com/@Enna](figma.com/@Enna) <br>
+Dunmoye Ayobami - https://github.com/Ayobami-2019 <br>
+Wonderful Adeyemo - https://github.com/Dev-wonderful <br>
+Kanu chibundu - https://github.com/Ginohmk <br>
+Sotunde Samuel - https://github.com/Sottysam <br>
+Oluwaseyi Bayode - https://github.com/smeetinc <br>
+Samuel Olakada - https://github.com/olakadasami <br>
+Raphael Olarewaju - https://github.com/Holuxneuman <br>
+Eniola Adebola - https://github.com/Eniolamiles <br>
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!

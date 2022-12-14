@@ -9,6 +9,8 @@ body{
 }
 .purple-nav{
     background-color: #E0CCE4;
+    position: fixed;
+    width: 100%;
 }
 .logo{
     width:45px;
@@ -17,7 +19,18 @@ body{
 .side_nav{
     min-width:250px;
     max-width:250px;
+    height: 100vh;
+    position: fixed;
+    margin-top: 70px;
+    z-index: 2;
     transition: all 0.2s ease;
+    padding-bottom: 2px;
+}
+.side_margin{
+    margin-left: 20%;
+}
+.top_margin{
+    margin-top: 100px;
 }
 .content{
     min-height: 100vh;
@@ -31,6 +44,7 @@ body{
 .sidebar li.active a, .sidebar li.active a:hover{
     font-weight: bold;
     background-color: #E0CCE4;
+    cursor: pointer;
 
 }
 .sidebar li.active a{
@@ -89,4 +103,18 @@ body{
 	100%{
 		width: 4%;
 	}
+}
+
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+.next{
+    max-width:fit-content;
+    margin-left: 87%;
+}
+.special_margin{
+    margin-top: 25%;
 }

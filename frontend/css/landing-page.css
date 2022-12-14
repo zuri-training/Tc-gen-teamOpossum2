@@ -129,10 +129,10 @@ select {
 
 main {
     width: 100%;
-    margin: 115px auto;
-    
+    margin-top: 160px;
+    margin-bottom: 115px;
     color: var(--bg-black-clr);
-    padding-top: 70px;
+    /* padding-top: 70px; */
 }
 
 .grid {
@@ -147,11 +147,10 @@ main {
 .legal-policy-section {
     margin: 0 auto;
     margin-bottom: 80px;
-    padding: 0 20px;
-    width: 92%;
-    /* height: 508px; */
-    column-gap: 80px;
-    /* position: relative; */
+    padding-top: 32px;
+    padding-left: 24px;
+    width: 91%;
+    column-gap: 90px;
 }
 
 .legal-policy-text h2 {
@@ -178,7 +177,15 @@ main {
     border-radius: 8px;
     padding: 16px 40px;
     color: var(--bg-white-clr);
+    transition: all 200ms ease-in-out;
 }
+
+.legal-policy-text a:hover {
+    opacity: 0.9;
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+  }
 
 .fa-arrow-right {
     margin-left: 12px;
@@ -189,38 +196,44 @@ main {
 }
 
 .card-section {
-    margin: 0 auto;
-    margin-bottom: 70px;
-    padding: 0 20px;
-    width: 92%;
-    /* height: 508px; */
+    margin: 0 83px 70px 81px;
     row-gap: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 89%;
+    /* height: 502px; */
+}
+
+.top-cards, .bottom-cards {
+    align-items: flex-start;
     column-gap: 16px;
-    /* position: relative; */
+    width: 100%;
+    /* height: 46%; */
 }
 
 .card {
     background-color: var(--bg-white-clr);
-    /* width: 630px; */
     border-radius: var(--bdr-rads);
     padding: 32px 40px;
     box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 27px;
+    width: 49.5%;
+    /* height: 100%; */
 }
 
 .card h5 {
     margin-top: 10px;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     line-height: 36px;
     margin-bottom: 15px;
 }
 
-.fa-greater-than {
-    color: var(--clr-brown);
+.card h5 img {
     width: 11.63px;
     height: 20px;
 }
@@ -228,7 +241,6 @@ main {
 .card-1 {
     background-color: var(--bg-gray-clr);
 }
-
 
 .t_c_gen-uses {
     background-color: var(--bg-lpurple-clr);
@@ -247,7 +259,7 @@ main {
 
 .uses h3 {
     font-weight: 600;
-    font-size: 40px;
+    font-size: 4rem;
     line-height: 60px;
 }
 
@@ -280,11 +292,10 @@ main {
     left: 70px;
     height: 387px;
     width: 380px;
-
 }
 
 .benefits {
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 600;
     line-height: 60px;
     text-align: center;   
@@ -344,18 +355,133 @@ main {
 }
 
 
-
-@media (max-width: 900px) {
-
-
-
+@media (max-width: 1278px) {
+    .card {
+        padding: 32px 25px;
+        white-space: nowrap;
+    }
 }
 
 
+@media (max-width: 1250px) {
+    .legal-policy-section.grid {
+        grid-template-columns: 1fr;
+    }
 
-@media (max-width: 500px) {
+    .sign-contract-img {
+        margin: 0 auto;
+    }
 
+    .t_c_gen-uses.flex {
+        gap: 0px;
+    }
 
+    .uses.pp, .uses.tc {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
 
+    .uses.pp h3 {
+        width: 100%;
+    }
+    
+    .uses p {
+        width: 100%;
+    }
+
+    .uses.tc {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .uses.tc p {
+        width: 100%;
+    }
+
+    .uses-img.img-2 {
+        position: relative;
+        bottom: -10px;
+    }
+
+    .uses.tc div:nth-of-type(2) {
+        position: relative;
+        top: -50px;
+    }
 }
 
+@media (max-width: 1211px) {
+    .card {
+        font-size: 1.5rem;  
+    }
+
+    .card h5 {
+    font-size: 2rem;
+    }
+}
+
+@media (max-width: 1030px) {
+
+    .card-section {
+        margin: 0 40px 70px 40px;
+    }
+
+    .top-cards, .bottom-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .legal-policy-section {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .legal-policy-text h2 {
+        font-size: 3.8rem;
+        width: 100%;
+    }
+    
+    .legal-policy-text p {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .sign-contract-img {
+        display: none;
+    }
+
+    .t_c_gen-benefits {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 480px) { 
+
+    .card {
+        font-size: 1.4rem;
+        white-space: initial;
+    }
+    .card h5 {
+        font-size: 1.8rem;
+    }
+
+    .t_c_gen-benefits {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+}
