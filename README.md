@@ -2,7 +2,8 @@
 
 This repo belongs to Team Opossum2 and we are working on a terms and conditions generator website. A platform that allows users to generate T&C and privacy policy for their platforms.
 
-### Live Link (Not available yet)
+### Live Link
+https://docs.google.com/document/d/11EtMM_J70UxwwZwSEOEVdruGWCGDDyomgp5RKhsYqiM/edit?usp=sharing
 
 ## Getting Started
 
