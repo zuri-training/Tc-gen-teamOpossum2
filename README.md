@@ -78,7 +78,7 @@ https://docs.google.com/document/d/1W_pPoRSXX0tm-aQfJNPNIsAeG1n2YWVE_doobbXFmY4/
 ## Milestone 3 google doc link
 https://docs.google.com/document/d/1o-zvZVnHIpvZ31BwP9zofIPT9KSEMPRQ8XqV-iZa9_8/edit?usp=sharing
 
-## Milestone 3 google doc link
+## Milestone 4 google doc link
 https://docs.google.com/document/d/11EtMM_J70UxwwZwSEOEVdruGWCGDDyomgp5RKhsYqiM/edit?usp=sharing
 
 ## Mood Boards
