@@ -33,7 +33,7 @@ For the purpose of the GDPR, the Company is the Data Controller.
 
 ?	"Device" means any device that can access the Service such as a computer, a cell phone or a digital tablet.
 
-?	"Do Not Track" (DNT)” is a concept that has been promoted by US regulatory authorities, in particular the U.S. Federal Trade Commission (FTC), for the Internet industry to develop and implement a mechanism for allowing internet users to control the tracking of their online activities across websites.
+?	"Do Not Track" (DNT)ï¿½ is a concept that has been promoted by US regulatory authorities, in particular the U.S. Federal Trade Commission (FTC), for the Internet industry to develop and implement a mechanism for allowing internet users to control the tracking of their online activities across websites.
 
 ?	"Personal Data" is any information that relates to an identified or identifiable individual.
 
@@ -148,7 +148,7 @@ The Company will retain Your Personal Data only for as long as is necessary for 
 The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.
 Transfer of Your Personal Data
 
-Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.
+Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to ï¿½ and maintained on ï¿½ computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.
 
 Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.
 
@@ -180,12 +180,11 @@ The Service Providers We use may have access to Your Personal Data. These third-
 Analytics
 We may use third-party Service providers to monitor and analyze the use of our Service.
 
-[LIST]
+
 Email Marketing
 
 We may use Your Personal Data to contact You with newsletters, marketing or promotional materials and other information that may be of interest to You. You may opt-out of receiving any, or all, of these communications from Us by following the unsubscribe link or instructions provided in any email We send or by contacting Us.
 
-[LIST]
 
 Payments
 
@@ -193,7 +192,6 @@ We may provide paid products and/or services within the Service. In that case, w
 
 We will not store or collect Your payment card details. That information is provided directly to Our third-party payment processors whose use of Your personal information is governed by their Privacy Policy. These payment processors adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, Mastercard, American Express and Discover. PCI-DSS requirements help ensure the secure handling of payment information.
 
-[LIST]
 
 GDPR Privacy Policy
 Legal Basis for Processing Personal Data under GDPR
@@ -240,7 +238,7 @@ Examples: A real name, alias, postal address, unique personal identifier, online
 
 Collected: Yes.
 
-?	Category B: Personal information categories listed in the California Customer Records statute (Cal. Civ. Code § 1798.80(e)).
+?	Category B: Personal information categories listed in the California Customer Records statute (Cal. Civ. Code ï¿½ 1798.80(e)).
 
 Examples: A name, signature, Social Security number, physical characteristics or description, address, telephone number, passport number, driver's license or state identification card number, insurance policy number, education, employment, employment history, bank account number, credit card number, debit card number, or any other financial information, medical information, or health insurance information. Some personal information included in this category may overlap with other categories.
 
@@ -335,7 +333,7 @@ Disclosure of Personal Information for Business Purposes or Commercial Purposes
 We may use or disclose and may have used or disclosed in the last twelve (12) months the following categories of personal information for business or commercial purposes:
 
 ?	Category A: Identifiers
-?	Category B: Personal information categories listed in the California Customer Records statute (Cal. Civ. Code § 1798.80(e))
+?	Category B: Personal information categories listed in the California Customer Records statute (Cal. Civ. Code ï¿½ 1798.80(e))
 ?	Category D: Commercial information
 ?	Category F: Internet or other similar network activity
 
@@ -351,7 +349,7 @@ Please note that the categories listed below are those defined in the CCPA. This
 We may sell and may have sold in the last twelve (12) months the following categories of personal information:
 
 ?	Category A: Identifiers
-?	Category B: Personal information categories listed in the California Customer Records statute (Cal. Civ. Code § 1798.80(e))
+?	Category B: Personal information categories listed in the California Customer Records statute (Cal. Civ. Code ï¿½ 1798.80(e))
 ?	Category D: Commercial information
 ?	Category F: Internet or other similar network activity
 Share of Personal Information
@@ -382,15 +380,15 @@ The CCPA provides California residents with specific rights regarding their pers
 ?	The categories of third parties with whom We share that personal information
 ?	The specific pieces of personal information We collected about You
 ?	If we sold Your personal information or disclosed Your personal information for a business purpose, We will disclose to You:
-¦	The categories of personal information categories sold
-¦	The categories of personal information categories disclosed
+ï¿½	The categories of personal information categories sold
+ï¿½	The categories of personal information categories disclosed
 ?	The right to say no to the sale of Personal Data (opt-out). You have the right to direct Us to not sell Your personal information. To submit an opt-out request please contact Us.
 ?	The right to delete Personal Data. You have the right to request the deletion of Your Personal Data, subject to certain exceptions. Once We receive and confirm Your request, We will delete (and direct Our Service Providers to delete) Your personal information from our records, unless an exception applies. We may deny Your deletion request if retaining the information is necessary for Us or Our Service Providers to:
 ?	Complete the transaction for which We collected the personal information, provide a good or service that You requested, take actions reasonably anticipated within the context of our ongoing business relationship with You, or otherwise perform our contract with You.
 ?	Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity, or prosecute those responsible for such activities.
 ?	Debug products to identify and repair errors that impair existing intended functionality.
 ?	Exercise free speech, ensure the right of another consumer to exercise their free speech rights, or exercise another right provided for by law.
-?	Comply with the California Electronic Communications Privacy Act (Cal. Penal Code § 1546 et. seq.).
+?	Comply with the California Electronic Communications Privacy Act (Cal. Penal Code ï¿½ 1546 et. seq.).
 ?	Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres to all other applicable ethics and privacy laws, when the information's deletion may likely render impossible or seriously impair the research's achievement, if You previously provided informed consent.
 ?	Enable solely internal uses that are reasonably aligned with consumer expectations based on Your relationship with Us.
 ?	Comply with a legal obligation.

@@ -10,7 +10,7 @@ const app = express()
 const PORT = process.env.PORT || 4000
 
 // connect to database
-//connectDB()
+connectDB()
 
 // middlewares
 app.use(express.json())

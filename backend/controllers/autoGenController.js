@@ -15,23 +15,52 @@ async function userVerification (req, res, next) {
 }
 
 //File modification to generate T&C and Privacy Policy for users
-//regex solution 1
+//A function mounted on the String prototype object to modify a 
+//txt file based on an object of regex mapped change pattern as the input
 String.prototype.inputUserDetails = function(obj) {
-    var retStr = this;
-    for (var x in obj) {
-        retStr = retStr.replace(new RegExp(x, 'gi'), obj[x]);
+    let modifiedStrings = this;
+    for (let x in obj) {
+        modifiedStrings = modifiedStrings.replaceAll(new RegExp(x, 'gi'), obj[x]);
     }
-    return retStr;
+    return modifiedStrings;
 };
 
-//console.log('[NUMBER] is [DATE]'.allReplace({'\\[DATE]': 'today', '\\[NUMBER\\]': 'Five'}));
+//Terms and Conditions Regex change mapping object
+const tcRegexMappings = { 
+    "\\[DATE\\]": date,
+    "\\[COMPANY INFORMATION\\]": companyInfo,
+    "\\[WEBSITE NAME\\]": webName,
+    "\\[WEBSITE_URL\\]": webUrl,
+    "\\[COPYRIGHT_AGENT_CONTACT_EMAIL\\]": copyrightAgent,
+    "\\[WEBSITE_CONTACT_EMAIL\\]": contactMail, 
+    "\\[WEBSITE_CONTACT_PAGE_URL\\]": ContactPage
+}
 
-async function fileModification () {
-    const sample = { "\\[WEBSITE_CONTACT_EMAIL\\]": "ade@gmail.com" }
+//Privacy Policy Regex change mapping object
+const ppRegexMappings = { 
+    "\\[DATE\\]": date,
+    "\\[COMPANY INFORMATION\\]": companyInfo,
+    "\\[WEBSITE NAME\\]": webName,
+    "\\[WEBSITE_URL\\]": webUrl,
+    "\\[WEBSITE_CONTACT_EMAIL\\]": contactMail, 
+    "\\[WEBSITE_CONTACT_PAGE_URL\\]": ContactPage
+}
+
+async function tcFileModification () {
 
     try{
         const file = await fsPromises.readFile(path.join(__dirname, '..', 'files', 't-c-template.txt'), 'utf-8')
-        console.log(file.allReplace(sample))
+        // console.log(file.inputUserDetails(sample))
+    }catch(err){
+        console.error(err)
+    }
+}
+
+async function ppFileModification () {
+
+    try{
+        const file = await fsPromises.readFile(path.join(__dirname, '..', 'files', 'privacy-policy-template.txt'), 'utf-8')
+        // console.log(file.inputUserDetails(sample))
     }catch(err){
         console.error(err)
     }
