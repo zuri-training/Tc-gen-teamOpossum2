@@ -28,12 +28,13 @@ String.prototype.inputUserDetails = function(obj) {
 
 async function tcFileModification (req, res, next) {
 
-    const { date, companyInfo, webName, webUrl, copyrightAgent, contactMail, ContactPage } = req.body
+    const { date, company, country, webName, webUrl, copyrightAgent, contactMail, ContactPage } = req.body
 
     //Terms and Conditions Regex change mapping object
     const tcRegexMappings = { 
         "\\[DATE\\]": date,
-        "\\[COMPANY INFORMATION\\]": companyInfo,
+        "\\[COMPANY INFORMATION\\]": company,
+        "\\[COMPANY COUNTRY\\]": country,
         "\\[WEBSITE NAME\\]": webName,
         "\\[WEBSITE_URL\\]": webUrl,
         "\\[COPYRIGHT_AGENT_CONTACT_EMAIL\\]": copyrightAgent,
@@ -57,12 +58,13 @@ async function tcFileModification (req, res, next) {
 
 async function ppFileModification (req, res, next) {
 
-    const { date, companyInfo, webName, webUrl, contactMail, ContactPage } = req.body
+    const { date, company, country, webName, webUrl, contactMail, ContactPage } = req.body
 
     //Privacy Policy Regex change mapping object
     const ppRegexMappings = { 
         "\\[DATE\\]": date,
-        "\\[COMPANY INFORMATION\\]": companyInfo,
+        "\\[COMPANY INFORMATION\\]": company,
+        "\\[COMPANY COUNTRY\\]": country,
         "\\[WEBSITE NAME\\]": webName,
         "\\[WEBSITE_URL\\]": webUrl,
         "\\[WEBSITE_CONTACT_EMAIL\\]": contactMail, 
