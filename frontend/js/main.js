@@ -62,13 +62,13 @@ function api_call(){
         company: company,
         country: country,
         list: list,
-        website_url: website_url,
-        website_contact_url: website_contact_url,
-        website_contact_email: website_contact_email
+        webUrl: website_url,
+        contactMail: website_contact_email,
+        contactPage: website_contact_url,
 
     }
     $.ajax({
-        url : "/generate/pp.gen",
+        url : "/generate/pp-gen",
         type: "POST",
         data : form_values,
         datatype: "JSON",
