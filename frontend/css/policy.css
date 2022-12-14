@@ -19,10 +19,12 @@ body{
 .side_nav{
     min-width:250px;
     max-width:250px;
+    height: 100vh;
     position: fixed;
     margin-top: 70px;
-    z-index: -2;
+    z-index: 2;
     transition: all 0.2s ease;
+    padding-bottom: 2px;
 }
 .side_margin{
     margin-left: 20%;
@@ -42,6 +44,7 @@ body{
 .sidebar li.active a, .sidebar li.active a:hover{
     font-weight: bold;
     background-color: #E0CCE4;
+    cursor: pointer;
 
 }
 .sidebar li.active a{
@@ -102,8 +105,11 @@ body{
 	}
 }
 
-#hidden_website, #hidden_app, #hidden_facebook{
+.hidden{
     display: none;
+}
+.show{
+    display: block;
 }
 .next{
     max-width:fit-content;

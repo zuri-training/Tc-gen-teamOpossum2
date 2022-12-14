@@ -107,38 +107,34 @@
 
           <ol class="navbar-nav me-auto mb-2 text-left">
             <li class="active nav-item">
-              <a class="text-decoration-none text-white nav-link" href="#"
+              <a class="text-decoration-none text-white nav-link" href="#uses"
                 ><span class="m-3">1.</span>Privacy Policy</a
               >
             </li>
             <li class="nav-item">
-              <a class="text-decoration-none nav-link text-white" href=""
+              <a class="text-decoration-none nav-link text-white" href="#information"
                 ><span class="m-3">2.</span>Users Information</a
               >
             </li>
             <li class="nav-item">
-              <a class="text-decoration-none nav-link text-white"
+              <a class="text-decoration-none nav-link text-white" href="#collection"
                 ><span class="m-3">3</span>Collection of Information</a
               >
             </li>
             <li class="nav-item">
-              <a class="text-decoration-none nav-link text-white"
-                ><span class="m-3">4.</span>Use of Information</a
+              <a class="text-decoration-none nav-link text-white" href="#use_of"><span class="m-3">4.</span>Use of Information</a
               >
             </li>
             <li class="nav-item">
-              <a class="text-decoration-none nav-link text-white"
-                ><span class="m-3">5.</span>Disclosure of Information</a
+              <a class="text-decoration-none nav-link text-white" href="disclosure"><span class="m-3">5.</span>Disclosure of Information</a
               >
             </li>
             <li class="nav-item">
-              <a class="text-decoration-none nav-link text-white"
-                ><span class="m-3">6.</span>User Right</a
+              <a class="text-decoration-none nav-link text-white" href="#right"><span class="m-3">6.</span>User Right</a
               >
             </li>
             <li class="nav-item" `>
-              <a class="text-decoration-none nav-link text-white"
-                ><span class="m-3">7.</span>Final Details</a
+              <a class="text-decoration-none nav-link text-white" href="#details"><span class="m-3">7.</span>Final Details</a
               >
             </li>
           </ol>
@@ -167,10 +163,10 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
+                    value="website"
+                    id="website"
                   />
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <label class="form-check-label" for="website">
                     Website
                   </label>
                 </div>
@@ -178,10 +174,10 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
+                    value="app"
+                    id="app"
                   />
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <label class="form-check-label" for="app">
                     Mobile application
                   </label>
                 </div>
@@ -189,14 +185,14 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
+                    value="facebook"
+                    id="facebook"
                   />
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <label class="form-check-label" for="facebook">
                     Facebook application
                   </label>
                 </div>
-                <div id="hidden_website">
+                <div class="hidden" id="div_website">
                   <p class="fw-bold">
                     What is the URL address of your website?
                   </p>
@@ -208,12 +204,12 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="url_input"
+                      id="website_url"
                       placeholder="www.examples.com"
                     />
                   </div>
                 </div>
-                <div id="hidden_app">
+                <div id="div_app" class="hidden">
                   <p class="fw-bold">What is the name of your application?</p>
                   <p class="fw-light">
                     Enter the full name of your mobile app.
@@ -222,12 +218,12 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="app_input"
+                      id="app_url"
                       placeholder="www.examples.com"
                     />
                   </div>
                 </div>
-                <div id="hidden_facebook">
+                <div id="div_facebook" class="hidden">
                   <p class="fw-bold">
                     What is the name of your Facebook application?
                   </p>
@@ -238,7 +234,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="facebook_input"
+                      id="facebook_url"
                       placeholder="www.examples.com"
                     />
                   </div>
@@ -264,9 +260,9 @@
               <hr />
               <button
                 class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-              >
+              ><a href="#information">
                 NEXT
-              </button>
+              </a></button>
 
               <hr class="special_margin purple" />
               <ul class="list-inline">
@@ -281,7 +277,7 @@
           </div>
         </section>
         <!---- End of First row----->
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="information">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -350,14 +346,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#uses">
                   BACK
-                </button>
+                </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#collection">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -374,7 +370,7 @@
         </section>
         <!---- End of Second row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="collection">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -539,14 +535,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#information"></a>
                   BACK
                 </button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#collection2">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -563,7 +559,7 @@
         </section>
         <!-- End of third row-->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="collection2">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -602,7 +598,7 @@
                 </div>
                 <h5 class="mt-3">Personal Information from Social Media</h5>
                 <p>
-                  Can users register for your wwebsite or app using Facebook,
+                  Can users register for your website or app using Facebook,
                   Google, or other social media account?
                 </p>
                 <div class="form-check">
@@ -666,14 +662,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#collection">
                   BACK
-                </button>
+                </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#use_of">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -690,7 +686,7 @@
         </section>
         <!---- End of 2nd Third row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="use_of">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -737,14 +733,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#collection2">
                   BACK
-                </button>
+                </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#disclosure">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -761,7 +757,7 @@
         </section>
         <!---- End of Fourth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="disclosure">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -862,14 +858,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#use_of">
                   BACK
-                </button>
+                </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#disclosure2">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -886,7 +882,7 @@
         </section>
         <!---- End of Fifth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="disclosure2">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -998,14 +994,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#disclosure">
                   BACK
-                </button>
+                </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#disclosure3">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -1022,7 +1018,7 @@
         </section>
         <!---- End of 2nd Fifth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="disclosure3">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1069,14 +1065,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#disclosure2">
                   BACK
-                </button>
+                </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#right">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -1093,7 +1089,7 @@
         </section>
         <!---- End of 3rd Fifth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="right">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1143,14 +1139,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#disclosure3">
                   BACK
-                </button>
+                </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#right2">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -1167,7 +1163,7 @@
         </section>
         <!---- End of sixth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="right2">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1219,7 +1215,7 @@
                   <input
                     type="email"
                     class="form-control"
-                    id="exampleInputEmail1"
+                    id="website_contact_email"
                     placeholder="Enter Email address"
                     aria-describedby="emailHelp"
                   />
@@ -1260,14 +1256,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#right">
                   BACK
-                </button>
+                </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#details">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -1284,7 +1280,7 @@
         </section>
         <!---- End of 2nd sixth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="details">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1305,7 +1301,7 @@
                 <input
                   type="text"
                   placeholder="Enter full legal name of company"
-                  id="inputText5"
+                  id="company"
                   class="form-control"
                   aria-describedby="textHelpBlock"
                 />
@@ -1393,14 +1389,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#right2">
                   BACK
-                </button>
+                </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#details2">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -1417,7 +1413,7 @@
         </section>
         <!---- End of seventh row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="details2">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1428,7 +1424,7 @@
             <div class="row">
               <div class="col-10 mt-3">
                 <h5 class="mt-3">Corporate Address</h5>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" aria-label="Default select example" id="country">
                   <option selected>Country</option>
                   <option value="1">Canada</option>
                   <option value="2">France</option>
@@ -1509,14 +1505,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#details">
                   BACK
-                </button>
+                </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                ><a href="#details3">
                   NEXT
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
@@ -1533,7 +1529,7 @@
         </section>
         <!---- End of 2nd seventh row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="uses">
+        <section class="p-2 col-9 side_margin top_margin" id="details3">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1558,7 +1554,7 @@
                 <input
                   type="text"
                   placeholder="12/09/2022"
-                  id="inputText5"
+                  id="date"
                   class="form-control"
                   aria-describedby="textHelpBlock"
                 />
@@ -1571,14 +1567,14 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                >
+                ><a href="#details2">
                   BACK
-                </button>
+                </a></button>
                 <button
-                  class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                >
+                  class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12" onclick="api_call()"
+                ><a>
                   PUBLISH
-                </button>
+                </a></button>
               </div>
 
               <hr class="special_margin purple" />
