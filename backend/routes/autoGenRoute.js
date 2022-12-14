@@ -1,24 +1,29 @@
 const express = require('express')
 const path = require('path')
+const { tcFileModification, ppFileModification } = require('../controllers/autoGenController')
 
 
-const router = express.Router({mergeParams: true})
+const ppRouter = express.Router({mergeParams: true})
+const tcRouter = express.Router({mergeParams: true})
 const projectRoot = path.join(__dirname, '..')
 
 //Generate Terms and Conditions
-router.get('tc-gen', (req, res) => {
+
+tcRouter.route('/tc-gen')
+        .get((req, res) => {
                 res.send('A form would be provided')
         })
-        .post('tc-gen/', (req, res) => {
-                res.send('The generated file')
+        .post(tcFileModification, (req, res) => {
+                res.status(200)
         })
 
 //Generate Privacy Policy
-router.get('pp-gen', (req, res) => {
-        res.send('A form would be provided')
+ppRouter.route('/pp-gen')
+        .get((req, res) => {
+                res.send('A form would be provided')
         })
-        .post('pp-gen/', (req, res) => {
-        res.send('The generated file')
+        .post(ppFileModification, (req, res) => {
+                res.status(200)
         })
 
 
