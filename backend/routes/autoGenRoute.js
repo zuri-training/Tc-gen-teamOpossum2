@@ -17,7 +17,7 @@ router.get('tc-gen', (req, res) => {
 router.get('pp-gen', (req, res) => {
         res.send('A form would be provided')
         })
-        .post('pp-gen/:form-details', (req, res) => {
+        .post('pp-gen/', (req, res) => {
         res.send('The generated file')
         })
 
