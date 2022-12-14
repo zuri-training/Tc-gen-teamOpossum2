@@ -6,7 +6,10 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:snippet_coder_utils/FormHelper.dart';
 import 'package:snippet_coder_utils/ProgressHUD.dart';
 import 'package:snippet_coder_utils/hex_color.dart';
+import 'package:tc_gen_mobile/config.dart';
 import 'package:tc_gen_mobile/main.dart';
+import 'package:tc_gen_mobile/models/login_request_model.dart';
+import 'package:tc_gen_mobile/services/api_service.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -179,7 +182,31 @@ class _LoginPageState extends State<LoginPage> {
             Center(
               child: FormHelper.submitButton(
                 "Login",
-                () {},
+                () {
+                  if (validateAndSave()) {
+                    setState(() {
+                      isAPIcallProcess = true;
+                    });
+
+                    LoginRequestModel model =
+                        LoginRequestModel(email: email!, password: password!);
+
+                    APIService.login(model).then((response) {
+                      setState(() {
+                        isAPIcallProcess = false;
+                      });
+                      if (response) {
+                        Navigator.pushNamedAndRemoveUntil(
+                            context, '/home', (route) => false);
+                      } else {
+                        FormHelper.showSimpleAlertDialog(context,
+                            Config.appName, 'Invalid Email/Password', "OK", () {
+                          Navigator.pop(context);
+                        });
+                      }
+                    });
+                  }
+                },
                 btnColor: HexColor("#660077"),
                 borderColor: HexColor("#660077"),
                 txtColor: Colors.white,
@@ -230,5 +257,15 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ]),
     );
+  }
+
+  bool validateAndSave() {
+    final form = globalKey.currentState;
+    if (form!.validate()) {
+      form.save();
+      return true;
+    } else {
+      return false;
+    }
   }
 }

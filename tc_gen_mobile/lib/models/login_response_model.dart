@@ -27,19 +27,22 @@ class LoginResponseModel {
 class User {
   User({
     required this.username,
+    required this.email,
     required this.password,
     required this.createdAt,
     required this.id,
   });
   late final String username;
   late final String password;
+  late final String email;
   late final String createdAt;
-  late final int id;
+  late final String id;
 
   User.fromJson(Map<String, dynamic> json) {
     username = json['username'];
     password = json['password'];
-    createdAt = json['createdAt '];
+    email = json['email'];
+    createdAt = json['createdAt'];
     id = json['_id'];
   }
 
@@ -47,6 +50,7 @@ class User {
     final _data = <String, dynamic>{};
     _data['username'] = username;
     _data['password'] = password;
+    _data['email'] = email;
     _data['createdAt '] = createdAt;
     _data['_id'] = id;
     return _data;

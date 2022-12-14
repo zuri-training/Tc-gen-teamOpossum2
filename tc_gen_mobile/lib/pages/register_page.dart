@@ -6,7 +6,10 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:snippet_coder_utils/FormHelper.dart';
 import 'package:snippet_coder_utils/ProgressHUD.dart';
 import 'package:snippet_coder_utils/hex_color.dart';
+import 'package:tc_gen_mobile/config.dart';
 import 'package:tc_gen_mobile/main.dart';
+import 'package:tc_gen_mobile/models/register_request_model.dart';
+import 'package:tc_gen_mobile/services/api_service.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -20,10 +23,15 @@ class _RegisterPageState extends State<RegisterPage> {
   bool hidePassword = true;
 
   // Maintain state of the form
-  GlobalKey<FormState> globalKey = GlobalKey<FormState>();
+  static final GlobalKey<FormState> globalKey = GlobalKey<FormState>();
   String? email;
   String? password;
   String? username;
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -133,7 +141,6 @@ class _RegisterPageState extends State<RegisterPage> {
                 textColor: Color.fromRGBO(58, 59, 59, 1),
                 hintColor: Color.fromRGBO(102, 0, 119, 0.7),
                 borderRadius: 10,
-                obscureText: hidePassword,
                 suffixIcon: IconButton(
                   onPressed: () {},
                   color: Color.fromRGBO(102, 0, 119, 0.7),
@@ -197,7 +204,40 @@ class _RegisterPageState extends State<RegisterPage> {
             Center(
               child: FormHelper.submitButton(
                 "Sign up",
-                () {},
+                () {
+                  if (validateAndSave()) {
+                    setState(() {
+                      isAPIcallProcess = true;
+                    });
+
+                    RegisterRequestModel model = RegisterRequestModel(
+                        username: username!,
+                        email: email!,
+                        password: password!);
+
+                    APIService.register(model).then((response) {
+                      setState(() {
+                        isAPIcallProcess = false;
+                      });
+                      if (response != null) {
+                        FormHelper.showSimpleAlertDialog(
+                            context,
+                            Config.appName,
+                            "Registration Successful. Please login to the account",
+                            "OK", () {
+                          Navigator.pushNamedAndRemoveUntil(
+                              context, '/login', (route) => false);
+                        });
+                      } else {
+                        FormHelper.showSimpleAlertDialog(
+                            context, Config.appName, 'response.message', "OK",
+                            () {
+                          Navigator.pop(context);
+                        });
+                      }
+                    });
+                  }
+                },
                 btnColor: HexColor("#660077"),
                 borderColor: HexColor("#660077"),
                 txtColor: Colors.white,
@@ -248,5 +288,15 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
           ]),
     );
+  }
+
+  bool validateAndSave() {
+    final form = globalKey.currentState;
+    if (form!.validate()) {
+      form.save();
+      return true;
+    } else {
+      return false;
+    }
   }
 }
