@@ -25,7 +25,7 @@ app.use((req, res, next) => {
     next();
 })
 //static files
-app.use('/static', express.static(path.join(frontend)))
+app.use('/static', express.static(frontend))
 
 //webpages
 app.get('/', (req, res) => {
