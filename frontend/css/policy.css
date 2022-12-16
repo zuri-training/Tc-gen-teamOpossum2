@@ -72,6 +72,9 @@ body{
 .side_nav.active{
     margin-left: 0;
 }
+.side_margin{
+    margin-left: 5%;
+}
 
 
 }
