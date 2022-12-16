@@ -74,7 +74,7 @@ const signup = async (req, res) => {
         const token = createToken(user._id)
 
         // Response
-        res.status(200).json({ user, token })
+        res.status(200).redirect('../login')
     } catch (err) {
         res.json({ error: err.message })
     }
