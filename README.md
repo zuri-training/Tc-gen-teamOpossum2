@@ -2,7 +2,8 @@
 
 This repo belongs to Team Opossum2 and we are working on a terms and conditions generator website. A platform that allows users to generate T&C and privacy policy for their platforms.
 
-### Live Link (Not available yet)
+### Live Link
+[https://tcgenerator.onrender.com/](https://tcgenerator.onrender.com/)
 
 ## Getting Started
 
@@ -77,8 +78,18 @@ https://docs.google.com/document/d/1W_pPoRSXX0tm-aQfJNPNIsAeG1n2YWVE_doobbXFmY4/
 ## Milestone 3 google doc link
 https://docs.google.com/document/d/1o-zvZVnHIpvZ31BwP9zofIPT9KSEMPRQ8XqV-iZa9_8/edit?usp=sharing
 
+## Milestone 4 google doc link
+https://docs.google.com/document/d/11EtMM_J70UxwwZwSEOEVdruGWCGDDyomgp5RKhsYqiM/edit?usp=sharing
+
 ## Mood Boards
 https://www.figma.com/file/ErdLJQ7akTRHHBkIEZI3Om/TCG-Mood-board?node-id=2%3A192&t=uha1lMckjann790V-1
+
+## Hosted Product
+https://tcgenerator.onrender.com/
+
+## Mobile Design 
+https://appetize.io/app/x5mjwpq4kxnrvz6xqptka65hd4?device=pixel4&osVersion=11.0&scale=75
+
 
 
 ## Team Members
