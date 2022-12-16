@@ -17,6 +17,7 @@ connectDB()
 
 // middlewares
 app.use(express.json())
+app.use(express.urlencoded({extended: false}))
 
 // logger middleware
 app.use((req, res, next) => {
