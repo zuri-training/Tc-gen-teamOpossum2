@@ -6,12 +6,11 @@ const path = require('path')
 //verification middleware
 async function userVerification (req, res, next) {
     const user = await users.findOne({username: req.params.username}).exec()
-    console.log(user)
     try {
         if(!user) throw new Error("User not registered or invalid details")
         next()
     } catch (error) {
-        res.status(400).json({Error: error.message})
+        res.status(400).json({user, Error: error.message})
     }
 }
 
