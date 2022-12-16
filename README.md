@@ -88,7 +88,7 @@ https://www.figma.com/file/ErdLJQ7akTRHHBkIEZI3Om/TCG-Mood-board?node-id=2%3A192
 https://tcgenerator.onrender.com/
 
 ## Mobile Design 
-https://appetize.io/app/x5mjwpq4kxnrvz6xqptka65hd4?device=pixel4&osVersion=11.0&scale=75
+https://appetize.io/app/7q2epogaesezilft2zxmgrjrr4?device=pixel4&osVersion=11.0&scale=75
 
 
 
