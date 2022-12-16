@@ -10,7 +10,7 @@ async function userVerification (req, res, next) {
         if(!user) throw new Error("User not registered or invalid details")
         next()
     } catch (error) {
-        res.status(400).json({user: user, Error: error.message})
+        res.status(400).json({user: req.params.username, Error: error.message})
     }
 }
 
