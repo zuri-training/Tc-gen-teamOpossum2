@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:tc_gen_mobile/pages/component/about_screen.dart';
 import 'package:tc_gen_mobile/pages/component/landing_screen.dart';
 
 class BottomBar extends StatefulWidget {
@@ -18,9 +19,9 @@ class _BottomBarState extends State<BottomBar> {
   int _selectedindex = 0;
 
   static final List<Widget> _widgetOptions = <Widget>[
-    LandingScreen(),
+    const LandingScreen(),
     const Text('Contact Us'),
-    const Text('About us'),
+    const AboutScreen(),
     const Text('Profile')
   ];
 
