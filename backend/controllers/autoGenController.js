@@ -10,7 +10,7 @@ async function userVerification (req, res, next) {
         if(!user) throw new Error("User not registered or invalid details")
         next()
     } catch (error) {
-        res.status(400).json({Error: error.message})
+        res.status(400).json({user: user, Error: error.message})
     }
 }
 
@@ -28,7 +28,7 @@ String.prototype.inputUserDetails = function(obj) {
 
 async function tcFileModification (req, res, next) {
 
-    const { date, company, country, webName, webUrl, copyrightAgent, contactMail, ContactPage } = req.body
+    const { date, company, country, webName, webUrl, copyrightAgent, contactMail, ContactPage } = req.params.formDetails
 
     //Terms and Conditions Regex change mapping object
     const tcRegexMappings = { 
@@ -58,7 +58,7 @@ async function tcFileModification (req, res, next) {
 
 async function ppFileModification (req, res, next) {
 
-    const { date, company, country, webName, webUrl, contactMail, ContactPage } = req.body
+    const { date, company, country, webName, webUrl, contactMail, ContactPage } = req.params.formDetails
 
     //Privacy Policy Regex change mapping object
     const ppRegexMappings = { 
