@@ -102,17 +102,17 @@ async function ppFileModification (req, res, next) {
 
 
     try{
-        if (req.body) {
+        if (req.body.date) {
             logger(req.body, 'pp-log.txt')
             const file = await fsPromises.readFile(path.join(__dirname, '..', 'files', 'privacy-policy-template.txt'), 'utf-8')
             const modifiedFile = ppModify(file, req.body)
-            res.json({file: modifiedFile})
-            // await fsPromises.writeFile(path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt'), modifiedFile)
-            // const generatedFile = path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt')
-            // res.download(generatedFile)
+            await fsPromises.writeFile(path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt'), modifiedFile)
+            const generatedFile = path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt')
+            res.download(generatedFile)
             next()
         } else {
             // console.log(req.body)
+            res.status(400).json({req: req})
             throw new Error("no form details")
         }
     }catch(err){
