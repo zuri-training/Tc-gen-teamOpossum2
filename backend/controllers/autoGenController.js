@@ -3,6 +3,12 @@ const fsPromises = require('fs').promises
 const path = require('path')
 
 
+//To log each point
+function logger (log, logFile) {
+    const log = new String(log)
+    await fsPromises.appendFile(path.join(__dirname, '..', 'files', 'error-log', logFile), `\n ${log}` )
+}
+
 //verification middleware
 async function userVerification (req, res, next) {
     const user = await users.findOne({username: req.params.username}).exec()
@@ -29,6 +35,8 @@ String.prototype.inputUserDetails = function(obj) {
 };
 
 
+
+
 async function tcFileModification (req, res, next) {
     
     const tcModify = (file, formDetails) => {
@@ -46,30 +54,27 @@ async function tcFileModification (req, res, next) {
         }
 
         const modifiedFile = file.inputUserDetails(tcRegexMappings)
-        console.log(file.inputUserDetails(tcRegexMappings))
+        logger('file modified', 'tc-log.txt')
 
         return modifiedFile
     }
 
     try{
         if (req.body) {
-            console.log(req.body)
+            logger(req.body, 'tc-log.txt')
             const file = await fsPromises.readFile(path.join(__dirname, '..', 'files', 't-c-template.txt'), 'utf-8')
-            // console.log(file.inputUserDetails(sample))
             const modifiedFile = tcModify(file, req.body)
             await fsPromises.writeFile(path.join(__dirname, '..', 'files', 'userfiles', 'generated-t-and-c.txt'), modifiedFile)
             const generatedFile = path.join(__dirname, '..', 'files', 'userfiles', 'generated-t-and-c.txt')
             res.download(generatedFile)
             next()
         } else {
-            console.log("err")
+            logger('nothing in the request body', 'tc-log.txt')
             throw new Error('No Form Details')
         }
     }catch(err){
-        // console.log('finally')
-        // console.error(err)
-        const log = new String(err)
-        await fsPromises.appendFile(path.join(__dirname, '..', 'files', 'error-log', 'tc-log.txt'), `\n ${log}` )
+        logger(err, 'tc-log.txt')
+        
     }
 }
 
@@ -89,6 +94,7 @@ async function ppFileModification (req, res, next) {
             "\\[WEBSITE_CONTACT_PAGE_URL\\]": ContactPage
         }
         const modifiedFile = file.inputUserDetails(ppRegexMappings)
+        logger('file modified', 'pp-log.txt')
 
         return modifiedFile
     }
@@ -97,9 +103,8 @@ async function ppFileModification (req, res, next) {
 
     try{
         if (req.body) {
+            logger(req.body, 'pp-log.txt')
             const file = await fsPromises.readFile(path.join(__dirname, '..', 'files', 'privacy-policy-template.txt'), 'utf-8')
-            // console.log(req.body)
-            // console.log(file.inputUserDetails(sample))
             const modifiedFile = ppModify(file, req.body)
             await fsPromises.writeFile(path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt'), modifiedFile)
             const generatedFile = path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt')
@@ -110,12 +115,9 @@ async function ppFileModification (req, res, next) {
             throw new Error("no form details")
         }
     }catch(err){
-        //console.error(err)
-        const log = new String(err)
-        await fsPromises.appendFile(path.join(__dirname, '..', 'files', 'error-log', 'pp-log.txt'), `\n${log}` )
+        logger(err, 'pp-log.txt')
     }
 }
 
-// fileModification()
 
 module.exports = { userVerification, tcFileModification, ppFileModification }
