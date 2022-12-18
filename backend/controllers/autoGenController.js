@@ -106,9 +106,10 @@ async function ppFileModification (req, res, next) {
             logger(req.body, 'pp-log.txt')
             const file = await fsPromises.readFile(path.join(__dirname, '..', 'files', 'privacy-policy-template.txt'), 'utf-8')
             const modifiedFile = ppModify(file, req.body)
-            await fsPromises.writeFile(path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt'), modifiedFile)
-            const generatedFile = path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt')
-            res.download(generatedFile)
+            res.json({file: modifiedFile})
+            // await fsPromises.writeFile(path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt'), modifiedFile)
+            // const generatedFile = path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt')
+            // res.download(generatedFile)
             next()
         } else {
             // console.log(req.body)

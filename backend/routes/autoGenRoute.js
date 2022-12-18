@@ -15,7 +15,7 @@ router.route('/tc-gen')
 
 //Generate Privacy Policy
 router.route('/pp-gen')
-        .post(ppFileModification, (req, res) => {
+        .get(ppFileModification, (req, res) => {
                 res.status(200)
         })
 
