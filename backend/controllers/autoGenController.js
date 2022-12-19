@@ -5,8 +5,12 @@ const path = require('path')
 
 //To log each point
 async function logger (loggee, logFile) {
-    const logs = new String(loggee)
-    await fsPromises.appendFile(path.join(__dirname, '..', 'files', 'error-log', logFile), `\n ${logs}` )
+    try{
+        const logs = new String(loggee)
+        await fsPromises.appendFile(path.join(__dirname, '..', 'files', 'error-log', logFile), `\n ${logs}` )
+    }catch (error){
+        console.log(error)
+    }
 }
 
 //verification middleware
@@ -52,9 +56,10 @@ async function tcFileModification (req, res, next) {
             "\\[WEBSITE_CONTACT_EMAIL\\]": contactMail, 
             "\\[WEBSITE_CONTACT_PAGE_URL\\]": ContactPage
         }
-
+        console.log("About to be modified")
         const modifiedFile = file.inputUserDetails(tcRegexMappings)
         logger('file modified', 'tc-log.txt')
+        console.log("modified")
 
         return modifiedFile
     }
@@ -93,8 +98,10 @@ async function ppFileModification (req, res, next) {
             "\\[WEBSITE_CONTACT_EMAIL\\]": contactMail, 
             "\\[WEBSITE_CONTACT_PAGE_URL\\]": ContactPage
         }
+        console.log("About to be modified")
         const modifiedFile = file.inputUserDetails(ppRegexMappings)
         logger('file modified', 'pp-log.txt')
+        console.log("modified")
 
         return modifiedFile
     }
@@ -104,6 +111,7 @@ async function ppFileModification (req, res, next) {
     try{
         if (req.body.date) {
             logger(req.body, 'pp-log.txt')
+            console.log(req.body)
             const file = await fsPromises.readFile(path.join(__dirname, '..', 'files', 'privacy-policy-template.txt'), 'utf-8')
             const modifiedFile = ppModify(file, req.body)
             await fsPromises.writeFile(path.join(__dirname, '..', 'files', 'userfiles', 'generated-privacy-policy.txt'), modifiedFile)
@@ -116,6 +124,7 @@ async function ppFileModification (req, res, next) {
             throw new Error("no form details")
         }
     }catch(err){
+        console.log(err)
         logger(err, 'pp-log.txt')
     }
 }
