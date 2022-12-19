@@ -9,7 +9,7 @@ const projectRoot = path.join(__dirname, '..')
 //Generate Terms and Conditions
 
 router.route('/tc-gen')
-        .get(tcFileModification, (req, res) => {
+        .post(tcFileModification, (req, res) => {
                 res.status(200)
         })
 

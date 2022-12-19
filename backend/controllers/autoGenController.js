@@ -65,7 +65,7 @@ async function tcFileModification (req, res, next) {
     }
 
     try{
-        if (req.body) {
+        if (req.body.date) {
             // logger(req.body, 'tc-log.txt')
             const file = await fsPromises.readFile(path.join(__dirname, '..', 'files', 't-c-template.txt'), 'utf-8')
             const modifiedFile = tcModify(file, req.body)
@@ -120,7 +120,7 @@ async function ppFileModification (req, res, next) {
             next()
         } else {
             // console.log(req.body)
-            res.status(400).json({req: req})
+            res.status(400).json({req: "no form details"})
             throw new Error("no form details")
         }
     }catch(err){
