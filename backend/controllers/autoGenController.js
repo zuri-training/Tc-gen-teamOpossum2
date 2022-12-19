@@ -66,7 +66,7 @@ async function tcFileModification (req, res, next) {
 
     try{
         if (req.body) {
-            logger(req.body, 'tc-log.txt')
+            // logger(req.body, 'tc-log.txt')
             const file = await fsPromises.readFile(path.join(__dirname, '..', 'files', 't-c-template.txt'), 'utf-8')
             const modifiedFile = tcModify(file, req.body)
             await fsPromises.writeFile(path.join(__dirname, '..', 'files', 'userfiles', 'generated-t-and-c.txt'), modifiedFile)
@@ -110,7 +110,7 @@ async function ppFileModification (req, res, next) {
 
     try{
         if (req.body.date) {
-            logger(req.body, 'pp-log.txt')
+            // logger(req.body, 'pp-log.txt')
             console.log(req.body)
             const file = await fsPromises.readFile(path.join(__dirname, '..', 'files', 'privacy-policy-template.txt'), 'utf-8')
             const modifiedFile = ppModify(file, req.body)
