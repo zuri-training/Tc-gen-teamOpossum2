@@ -4,7 +4,7 @@ const path = require('path')
 
 
 //To log each point
-function logger (loggee, logFile) {
+async function logger (loggee, logFile) {
     const logs = new String(loggee)
     await fsPromises.appendFile(path.join(__dirname, '..', 'files', 'error-log', logFile), `\n ${logs}` )
 }
