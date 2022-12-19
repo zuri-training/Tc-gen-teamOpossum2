@@ -4,9 +4,9 @@ const path = require('path')
 
 
 //To log each point
-function logger (log, logFile) {
-    const log = new String(log)
-    await fsPromises.appendFile(path.join(__dirname, '..', 'files', 'error-log', logFile), `\n ${log}` )
+function logger (loggee, logFile) {
+    const logs = new String(loggee)
+    await fsPromises.appendFile(path.join(__dirname, '..', 'files', 'error-log', logFile), `\n ${logs}` )
 }
 
 //verification middleware
