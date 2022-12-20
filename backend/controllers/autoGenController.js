@@ -75,10 +75,12 @@ async function tcFileModification (req, res, next) {
             next()
         } else {
             logger('nothing in the request body', 'tc-log.txt')
+            res.status(400).json({req: "no form details"})
             throw new Error('No Form Details')
         }
     }catch(err){
         logger(err, 'tc-log.txt')
+        console.log(err)
         
     }
 }
