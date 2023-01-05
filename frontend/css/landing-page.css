@@ -177,14 +177,14 @@ main {
     border-radius: 8px;
     padding: 16px 40px;
     color: var(--bg-white-clr);
-    transition: all 200ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .legal-policy-text a:hover {
-    opacity: 0.9;
+    opacity: 0.7;
     position: relative;
-    bottom: 1px;
-    left: 1px;
+    bottom: 2px;
+    /* left: 1px; */
   }
 
 .fa-arrow-right {

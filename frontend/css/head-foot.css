@@ -44,10 +44,10 @@ header a {
   transition: all 200ms ease-in-out;
 }
 
-.main-head a:hover, 
-.foot li a:hover, 
-.foot p:hover {
-  opacity: 0.69;
+.main-head a:hover,
+.foot li > a:hover, 
+.foot > p:hover {
+  opacity: 0.5;
 }
 
 .head-logo li {
@@ -64,17 +64,33 @@ header a {
   color: #000;
 }
 
-.head1 li:nth-of-type(1) a, .generate a,
-.main-foot li:nth-of-type(1) a {
+.head1-generate a, .generate a,
+.main-foot-generate a {
   display: flex;
   justify-content: stretch;
   align-items: center;
   gap: 8px;
 }
 
-.head1 li:nth-of-type(1) {
+.head1-generate, .main-foot-generate {
   position: relative;
 }
+
+.head1-generate:hover .dropdown,
+.main-foot-generate:hover .dropdown,
+.generate:hover .dropdown {
+  animation: dropdown 0.2s ease-in-out infinite;
+}
+
+@keyframes dropdown {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+} 
 
 .generate-items {
   display: flex;
@@ -97,12 +113,12 @@ header a {
   float: left;
   margin: 0;
   padding: 0;
-  color: #370341;
+  color: #480853;
+  opacity: 0.8;
   text-align: left;
   padding: 20px 10px;
   border-radius: 8px;
 }
-
 
 .generate-items p {
   font-size: 12px;
@@ -113,16 +129,16 @@ header a {
   line-height: 13px;
 }
 
-.head1-generate:hover .generate-items {
-  opacity: 1;
+.head1-generate:hover .generate-items,
+.main-foot-generate:hover .foot-genItems {
   visibility: visible;
 }
 
-.generate-policy:hover, 
-.generate-tandc:hover {
-  background-color: #D5D5D5;
+.generate-items a:hover, 
+.foot-genItems a:hover {
   opacity: 1;
-  color: red;
+  font-weight: 600;
+  background-color: rgba(222, 200, 226, .25);
 }
 
 .head2, .head2-tooltip {
@@ -145,18 +161,8 @@ header a {
 }
 
 .head4 a {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10px;
-  width: 174px;
-  height: 48px;
   border-radius: 8px;
   color: #ffffff;
-}
-
-.head4 a {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -166,20 +172,55 @@ header a {
   width: 174px;
   height: 48px;
   background: #660077;
+  transition: all 500ms ease-in-out;
 }
 
 .head4 a:hover, .get a:hover {
-  opacity: 0.9;
+  opacity: 0.7;
   position: relative;
-  bottom: 1px;
-  left: 1px;
+  bottom: 2px;
 }
 
 .menu-bar {
-  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  right: -1000px;
+  right: 15px;
+  top: 40px;
+  width: 250px;
+}
+
+.visibility {
+  visibility: hidden;  
+  transition: all 0.1ms ease-in-out;
+}
+
+.menu-icon {
   font-size: 28px;
+  visibility: hidden;  
+}
+
+.menu-icon:hover {
+  font-size: 28.7px;
+}
+
+.head1-tooltip, 
+.head2-tooltip {
+  opacity: 0;
+}
+
+.x-icon {
+  font-size: 16px;
+  position: absolute;
+  right: 12px;
+  top: 68px;
+  z-index: 4;
+  opacity: 0;
+}
+
+.x-icon:hover {
+  font-size: 17px;
 }
 
 /* ----- HEADER CSS ENDS ---- */
@@ -240,12 +281,21 @@ footer a {
   color: #ffffff;
 }
 
-.footer-generate:hover .generate-items {
+.main-foot-generate a:hover, 
+.main-foot-generate p:hover {
   opacity: 1;
-  visibility: visible;
-  top: -200.5px;
-  left: -100px;
-} 
+}
+
+.foot-genItems {
+  position: absolute;
+  top: -222px;
+  z-index: 2;
+  box-shadow: 4px -3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.foot-genItems a {
+  color: #480853;
+}
 
 .main-foot2 {
   padding: 16px 0;
@@ -268,30 +318,32 @@ footer a {
 /* ----- FOOTER CSS ENDS ---- */
 
 
-@media (max-width: 1100px) {
 
-  .menu-bar {
+@media (max-width: 1100px) {
+  
+
+  .menu-icon {
+    visibility: visible;
+  }
+
+  .x-icon {
     opacity: 1;
-    right: 80px;
-    top: 40px;
+  }
+
+  .head1 {
+    gap: 30px;
   }
 
   .head2 {
     display: none;
   }
 
-  .tooltip {
-    position: absolute;
-    top: -280px;
-    right: -70px;
+  .head1-tooltip {
     flex-direction: column;
-    width: 280px;
-    background-color: #E0CCE4;
+    gap: 15px;
+    width: 100%;
+    margin-top: -143px;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
-    visibility: hidden;   
-    padding-bottom: 10px;
-    z-index: -1;
   }
 
   .head2-tooltip {
@@ -300,31 +352,50 @@ footer a {
     gap: 20px;
     width: 200px;
     margin: 0 auto;
-    margin-top: 150px;
-  }
-
-  .head3 {
-    margin-right: 4px;
-  }
-
- .menu-bar:hover .tooltip {
+    background-color: #E0CCE4;
+    transition: all 0.1ms ease-in-out;
+    width: 100%;
     opacity: 1;
+  }
+
+ /* .menu-bar:hover .head2-tooltip {
+    visibility: visible;  
+  } */
+
+  .visible {
     visibility: visible;  
   }
 
-  .head1-tooltip {
-    visibility: visible;
+  .foot {
     flex-direction: column;
     gap: 20px;
-    width: 200px;
-    margin: 0 auto;
-    flex-direction: column;
+    }
+
+  .foot-genItems {
+    position: absolute;
+    top: 25px;
+    left: -50px;
+    box-shadow: -1px 1px 2px rgba(131, 129, 129, 0.2);
+    padding: 8px 8px;
+    width: 280px;
+    background-color: #040404;
+    transition: all 0.1s ease-in-out;
+    opacity: 1;
+    }
+
+  .main-foot .generate-policy, 
+  .main-foot .generate-tandc {
+    padding: 10px 5px;
+    color: #E0CCE4;
+    transition: all 0.1s ease-in-out;
   }
 
-.foot {
-  flex-direction: column;
-  gap: 20px;
+  .main-foot .generate-policy:hover, 
+  .main-foot .generate-tandc:hover {
+    background-color: #E0CCE4;
+    color: #480853;
   }
+
 }
 
 @media (max-width: 900px) {
@@ -337,27 +408,47 @@ footer a {
     display: none;
   }
 
-  .head2-tooltip {
-    margin-top: -10px;
+  .head1-tooltip {
+    transition: all 0.1ms ease-in-out;
+    margin-top: 35px;
+    z-index: 2;
+    background-color: #E0CCE4;
+    opacity: 1;
   }
 
-  .menu-bar:hover .tooltip {
-    top: 65px;
-    width: 300px;
-    visibility: visible;
+  /* .menu-bar:hover .head1-tooltip {
+    visibility: visible;  
+  } */
+
+  .menu-bar .generate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 500ms ease-in-out;
   }
 
-  .generate-items {
+  .menu-bar .generate-items {
     padding: 15px 10px;
     padding-top: 5;
+    width: 90%;
+    position: absolute;
+    top: 102px;
+    left: 13px;
+    visibility: hidden;
+    opacity:0;
+    display: flex;
+    flex-direction: column;
+    transition: all 500ms ease-in-out;
   }
 
-   .generate:hover .generate-items {
+   .menu-bar .generate:hover .generate-items {
     visibility: visible;
-    position: relative;
-    width: 290px;
-    top: 15px;
-    left: 0.3px;
+    opacity: 1;
+   
+  }
+
+  .menu-bar .generate:hover {
+    margin-bottom: 250px;
   }
 
 }

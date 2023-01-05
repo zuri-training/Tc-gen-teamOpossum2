@@ -47,10 +47,10 @@
 
             <div class="menu-bar">
                 <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
-                <div class="tooltip">
-                    <div class="head1-tooltip">
+                <div class="x-icon visibility"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="head1-tooltip visibility">
                         <div class="generate">
-                            <a href="#"><span>Generate</span><span class="dropdown"><img src="Image/landing-pg-imgs/expand_more.png" alt="arrow-down" /></span></a>
+                            <a href="#" class="generate-tag"><span>Generate</span><span class="dropdown"><img src="Image/landing-pg-imgs/expand_more.png" alt="arrow-down" /></span></a>
                             <div class="generate-items">
                                 <a href="policy.html" target="_blank" class="generate-policy">
                                     <h5>Privacy Policy</h5>
@@ -66,11 +66,11 @@
                         <div> <a href="https://twitter.com/theZuriTeam">Contact Us</a></div>
                         <div> <a href="faq.html">FAQ</a></div>
                     </div>
-                    <div class="head2-tooltip">
+
+                    <div class="head2-tooltip visibility">
                         <div class="head3"><a href="login.html">Log in</a></div>
                         <div class="head4"><a href="registration.html">Get Started</a></div>
                     </div>
-                </div>
             <div>
         </nav>
     </header>
@@ -235,9 +235,19 @@
             </ul>
     
             <ul class="main-foot">
-                <li>
-                    <a href="#header"><span>Generate</span><img src="Image/landing-pg-imgs/expand_more (2).png" alt="arrow-down" /></a>
-                    </li>
+                <li class="main-foot-generate">
+                    <a href="#"><span>Generate</span><span></span><img class="dropdown" src="Image/landing-pg-imgs/expand_more (2).png" alt="arrow-down" /></a>
+                    <div class="generate-items foot-genItems">
+                        <a href="policy.html" target="_blank" class="generate-policy">
+                            <h5>Privacy Policy</h5>
+                            <p>How personal information collected is protected.</p>
+                        </a>
+                        <a href="T&C.html" target="_blank" class="generate-tandc">
+                            <h5>Terms & condition</h5>
+                            <p>Legal agreement between your service and a person.</p>
+                        </a>
+                    </div>
+                </li>
                 <li><a href="https://twitter.com/theZuriTeam">Contact Us</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
@@ -250,6 +260,6 @@
             </ul>
         </nav>
       </footer>
-    
+      <script src="./js/header.js"></script>
 </body>
 </html>
