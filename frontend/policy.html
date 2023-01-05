@@ -57,6 +57,7 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a class="dropdown-item" href="#">Terms & Condition</a>
+   
                   </li>
                   <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
                 </ul>
@@ -86,7 +87,7 @@
     </header>
     <main class="container-fluid">
       <div class="main-container row">
-        <aside class="sidebar purple col-md-2 text-white side_nav aside col-4">
+        <aside class="sidebar purple col-md-2 text-white side_nav aside col-md-4">
           <div class="ps-3">
             <button
               class="btn d-md-none d-block close-btn px-1 py-0 text-white"
@@ -147,7 +148,7 @@
           </div>
         </aside>
 
-        <section class="mt-8 col-9 side_margin top_margin" id="uses">
+        <section class="mt-8 col-9 sm-ms-0 side_margin  top_margin show" id="uses">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -156,7 +157,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-8 mt-3">
+              <div class="col-md-8 mt-3">
                 <h5 class="mt-3">Privacy Policy Uses</h5>
                 <p>what will this privacy be used for?</p>
                 <div class="form-check">
@@ -240,7 +241,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 mt-3">
+              <div class="col-md-4 mt-3">
                 <article class="">
                   <img src="img/bulb.png" alt="Bulb icon" />
                   <h5 class="fw-light">What is a privacy policy?</h5>
@@ -260,7 +261,7 @@
               <hr />
               <button
                 class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-              ><a href="#information">
+              ><a href="#information" class="next1">
                 NEXT
               </a></button>
 
@@ -277,7 +278,7 @@
           </div>
         </section>
         <!---- End of First row----->
-        <section class="p-2 col-9 side_margin top_margin" id="information">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="information">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -286,7 +287,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">English Preference</h5>
                 <p>
                   Do you have users in the EU, UK, Switzerland, Iceland,
@@ -343,15 +344,15 @@
             </div>
             <div class="row">
               <hr />
-              <div class="d-flex">
+              <div class="d-flex justify-content-between">
                 <button
-                  class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#uses">
+                  class="btn py-2 px-3 btn-outline-none text-purple  w-40 back mb-12 fw-bold"
+                ><a href="#uses" class="back1">
                   BACK
                 </a></button>
                 <button
-                  class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#collection">
+                  class="btn py-2 px-3 purple text-white  w-40 next mb-12"
+                ><a href="#collection" class="next2">
                   NEXT
                 </a></button>
               </div>
@@ -370,7 +371,7 @@
         </section>
         <!---- End of Second row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="collection">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="collection">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -379,7 +380,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Personal Information Collection Directly</h5>
                 <p>
                   “Collect directly” means the user directly provides you with
@@ -535,12 +536,12 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#information"></a>
+                ><a href="#information" class="back2"></a>
                   BACK
                 </button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#collection2">
+                ><a href="#collection2" class="next3">
                   NEXT
                 </a></button>
               </div>
@@ -559,7 +560,7 @@
         </section>
         <!-- End of third row-->
 
-        <section class="p-2 col-9 side_margin top_margin" id="collection2">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="collection2">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -568,7 +569,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Sensitive Personal Information Collected</h5>
                 <p>
                   Do you collect sensitive information? if you are not sure,
@@ -662,12 +663,12 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#collection">
+                ><a href="#collection" class="back3">
                   BACK
                 </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#use_of">
+                ><a href="#use_of" class="next4">
                   NEXT
                 </a></button>
               </div>
@@ -686,7 +687,7 @@
         </section>
         <!---- End of 2nd Third row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="use_of">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="use_of">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -695,7 +696,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Marketing and Promotional Communication</h5>
                 <p>
                   Do you send marketing or promotional communication to your
@@ -733,12 +734,12 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#collection2">
+                ><a href="#collection2" class="back4">
                   BACK
                 </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#disclosure">
+                ><a href="#disclosure" class="next5">
                   NEXT
                 </a></button>
               </div>
@@ -757,7 +758,7 @@
         </section>
         <!---- End of Fourth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="disclosure">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="disclosure">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -766,7 +767,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Third Parties</h5>
                 <p>
                   Do you disclose users’ personal information to third parties?
@@ -858,12 +859,12 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#use_of">
+                ><a href="#use_of" class="back5">
                   BACK
                 </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#disclosure2">
+                ><a href="#disclosure2" class="next6">
                   NEXT
                 </a></button>
               </div>
@@ -882,7 +883,7 @@
         </section>
         <!---- End of Fifth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="disclosure2">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="disclosure2">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -891,7 +892,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Business Affiliates</h5>
                 <p>
                   Will you disclose any of your users? personal information to
@@ -994,12 +995,12 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#disclosure">
+                ><a href="#disclosure" class="back6">
                   BACK
                 </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#disclosure3">
+                ><a href="#disclosure3" class="next7">
                   NEXT
                 </a></button>
               </div>
@@ -1018,7 +1019,7 @@
         </section>
         <!---- End of 2nd Fifth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="disclosure3">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="disclosure3">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1027,7 +1028,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Security Measures</h5>
                 <p>
                   Do you have appropriate security measures in place that
@@ -1065,12 +1066,12 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#disclosure2">
+                ><a href="#disclosure2" class="back7">
                   BACK
                 </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#right">
+                ><a href="#right" class="next8">
                   NEXT
                 </a></button>
               </div>
@@ -1089,7 +1090,7 @@
         </section>
         <!---- End of 3rd Fifth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="right">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="right">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1098,7 +1099,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Data protection Officer (DPO)</h5>
                 <p>
                   Have you, or will you appoint a data protection officer (DPO)?
@@ -1139,12 +1140,12 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#disclosure3">
+                ><a href="#disclosure3" class="back8">
                   BACK
                 </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#right2">
+                ><a href="#right2" class="next9">
                   NEXT
                 </a></button>
               </div>
@@ -1163,7 +1164,7 @@
         </section>
         <!---- End of sixth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="right2">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="right2">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1172,7 +1173,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Data Subject Access Request</h5>
                 <p>
                   Do you provide a service that allows users to send a request a
@@ -1256,12 +1257,12 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#right">
+                ><a href="#right" class="back9">
                   BACK
                 </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#details">
+                ><a href="#details" class="next10">
                   NEXT
                 </a></button>
               </div>
@@ -1280,7 +1281,7 @@
         </section>
         <!---- End of 2nd sixth row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="details">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="details">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1289,7 +1290,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Company</h5>
                 <p>
                   <strong>Full legal name of company</strong>
@@ -1389,12 +1390,12 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#right2">
+                ><a href="#right2" class="back10">
                   BACK
                 </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#details2">
+                ><a href="#details2" class="next11">
                   NEXT
                 </a></button>
               </div>
@@ -1413,7 +1414,7 @@
         </section>
         <!---- End of seventh row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="details2">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="details2">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1422,7 +1423,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Corporate Address</h5>
                 <select class="form-select" aria-label="Default select example" id="country">
                   <option selected>Country</option>
@@ -1505,15 +1506,16 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#details">
+                ><a href="#details" class="back11">
                   BACK
                 </a></button>
                 <button
                   class="btn py-2 px-3 purple text-white d-flex justify-content-end w-40 next mb-12"
-                ><a href="#details3">
+                ><a href="#details3" class="next12">
                   NEXT
                 </a></button>
               </div>
+              
 
               <hr class="special_margin purple" />
               <ul class="list-inline">
@@ -1529,7 +1531,7 @@
         </section>
         <!---- End of 2nd seventh row----->
 
-        <section class="p-2 col-9 side_margin top_margin" id="details3">
+        <section class="p-2 col-9 side_margin top_margin hidden" id="details3">
           <button class="btn open-btn px-1 py-0 d-md-none d-block">
             <i class="fa fa-bars text-dark"></i>
           </button>
@@ -1538,7 +1540,7 @@
           <hr class="purple" />
           <div class="container">
             <div class="row">
-              <div class="col-10 mt-3">
+              <div class="col-md-10 mt-3">
                 <h5 class="mt-3">Version Data</h5>
 
                 <label for="inputText5" class="form-label"
@@ -1567,7 +1569,7 @@
               <div class="d-flex">
                 <button
                   class="btn py-2 px-3 btn-outline-none text-purple d-flex justify-content-end w-40 back mb-12 fw-bold"
-                ><a href="#details2">
+                ><a href="#details2" class="back12">
                   BACK
                 </a></button>
                 <button

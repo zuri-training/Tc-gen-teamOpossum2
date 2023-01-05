@@ -7,39 +7,37 @@ import 'package:tc_gen_mobile/models/login_response_model.dart';
 
 class SharedService {
   static Future<bool> isLoggedIn() async {
-    var isKeyExist =
+    var isCacheKeyExist =
         await APICacheManager().isAPICacheKeyExist("login_details");
 
-    return isKeyExist;
+    return isCacheKeyExist;
   }
 
   static Future<LoginResponseModel?> loginDetails() async {
-    var isKeyExist =
+    var isCacheKeyExist =
         await APICacheManager().isAPICacheKeyExist("login_details");
 
-    if (isKeyExist) {
+    if (isCacheKeyExist) {
       var cacheData = await APICacheManager().getCacheData("login_details");
 
       return loginResponseJson(cacheData.syncData);
     }
   }
 
-  static Future<void> setloginDetails(
-    LoginResponseModel model,
-  ) async {
-    APICacheDBModel cacheDBModel = APICacheDBModel(
+  static Future<void> setloginDetails(LoginResponseModel loginResponse) async {
+    APICacheDBModel cacheModel = APICacheDBModel(
       key: "login_details",
-      syncData: jsonEncode(model.toJson()),
+      syncData: jsonEncode(loginResponse.toJson()),
     );
-
-    await APICacheManager().addCacheData(cacheDBModel);
+    print('In espose');
+    await APICacheManager().addCacheData(cacheModel);
   }
 
   static Future<void> logout(BuildContext context) async {
     await APICacheManager().deleteCache("login_details");
     Navigator.pushNamedAndRemoveUntil(
       context,
-      '/',
+      '/login',
       (route) => false,
     );
   }

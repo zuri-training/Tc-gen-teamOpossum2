@@ -33,10 +33,12 @@ dependencies:
     sdk: flutter
   api_cache_manager: ^1.0.2
   snippet_coder_utils: ^1.0.12
+  fluentui_icons: ^1.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter_gen: ^5.1.0+1
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +64,11 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/tcLogo.png
+    - assets/images/tc_generate.png
+    - assets/images/lock.png
+    - assets/images/disclaimer_generator.png
+    - assets/images/refund_generator.png
+    - assets/images/about_us.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
